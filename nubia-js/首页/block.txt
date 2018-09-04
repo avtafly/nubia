@@ -1,0 +1,209 @@
+{
+    "code": 0,
+    "request_tag": "7ffb9b7b-6f1b-4378-b3a5-142fb3675a35",
+    "data": {
+        "101": [
+            {
+                "id": 1085,
+                "title": "Z18mini购买页面",
+                "sub_title": "",
+                "page_type": 1,
+                "big_image": "blockimage/152456344748.jpg",
+                "small_image": "blockimage/152456344730.jpg",
+                "file_path": "",
+                "link": "https://shop.nubia.com/buy/nubiaz18mini/black6gb128gb",
+                "media_type": 1,
+                "description": "",
+                "title_position": 0,
+                "content_bg_color": 0,
+                "btn_lists": [
+                    {
+                        "title": "",
+                        "link_type": "0",
+                        "link_style": "0",
+                        "link": "",
+                        "target": "0"
+                    },
+                    {
+                        "title": "",
+                        "link_type": "0",
+                        "link_style": "0",
+                        "link": "",
+                        "target": "0"
+                    },
+                    {
+                        "title": "",
+                        "link_type": "0",
+                        "link_style": "0",
+                        "link": "",
+                        "target": "0"
+                    }
+                ]
+            },
+            {
+                "id": 1166,
+                "title": "红魔迷彩版抢购",
+                "sub_title": "",
+                "page_type": 1,
+                "big_image": "blockimage/153377779384.jpg",
+                "small_image": "",
+                "file_path": "",
+                "link": "https://shop.nubia.com/buy/nubiaredmagic/mc",
+                "media_type": 1,
+                "description": "",
+                "title_position": 0,
+                "content_bg_color": 0,
+                "btn_lists": [
+                    {
+                        "title": "",
+                        "link_type": "0",
+                        "link_style": "0",
+                        "link": "",
+                        "target": "0"
+                    },
+                    {
+                        "title": "",
+                        "link_type": "0",
+                        "link_style": "0",
+                        "link": "",
+                        "target": "0"
+                    },
+                    {
+                        "title": "",
+                        "link_type": "0",
+                        "link_style": "0",
+                        "link": "",
+                        "target": "0"
+                    }
+                ]
+            },
+            {
+                "id": 1031,
+                "title": "红魔手机购买",
+                "sub_title": "",
+                "page_type": 1,
+                "big_image": "blockimage/153412785187.jpg",
+                "small_image": "blockimage/15323279228.jpg",
+                "file_path": "",
+                "link": "https://shop.nubia.com/buy/nubiaredmagic/black6gb64gb",
+                "media_type": 1,
+                "description": "",
+                "title_position": 0,
+                "content_bg_color": 0,
+                "btn_lists": [
+                    {
+                        "title": "",
+                        "link_type": "0",
+                        "link_style": "0",
+                        "link": "",
+                        "target": "0"
+                    },
+                    {
+                        "title": "",
+                        "link_type": "0",
+                        "link_style": "0",
+                        "link": "",
+                        "target": "0"
+                    },
+                    {
+                        "title": "",
+                        "link_type": "0",
+                        "link_style": "0",
+                        "link": "",
+                        "target": "0"
+                    }
+                ]
+            }
+        ],
+        "102": [
+            {
+                "id": 1073,
+                "title": "不红魔 不成活",
+                "sub_title": "",
+                "page_type": 1,
+                "big_image": "blockimage/152420317420.jpg",
+                "small_image": "blockimage/152420317469.jpg",
+                "file_path": "https://oss.static.nubia.cn/upload/5ad82f9a2e98880.mp4",
+                "link": "",
+                "media_type": 2,
+                "description": "",
+                "title_position": 0,
+                "content_bg_color": 0
+            },
+            {
+                "id": 719,
+                "title": "nubia UI 5.0",
+                "sub_title": "nubia UI 5.0  更智慧 更好用",
+                "page_type": 1,
+                "big_image": "blockimage/149672763226.jpg",
+                "small_image": "blockimage/14967276322.jpg",
+                "file_path": "",
+                "link": "http://ui.nubia.cn/",
+                "media_type": 1,
+                "description": "",
+                "title_position": 0,
+                "content_bg_color": 0,
+                "btn_lists": [
+                    {
+                        "title": "",
+                        "link_type": "1",
+                        "link_style": "1",
+                        "link": "",
+                        "target": "1"
+                    },
+                    {
+                        "title": "",
+                        "link_type": "1",
+                        "link_style": "1",
+                        "link": "",
+                        "target": "1"
+                    },
+                    {
+                        "title": "",
+                        "link_type": "1",
+                        "link_style": "1",
+                        "link": "",
+                        "target": "1"
+                    }
+                ]
+            },
+            {
+                "id": 739,
+                "title": "努比亚摄影长廊",
+                "sub_title": "努比亚摄影长廊",
+                "page_type": 1,
+                "big_image": "blockimage/149752092562.jpg",
+                "small_image": "blockimage/149752092559.jpg",
+                "file_path": "",
+                "link": "http://www.nubia.com/gallery.php",
+                "media_type": 1,
+                "description": "",
+                "title_position": 0,
+                "content_bg_color": 0,
+                "btn_lists": [
+                    {
+                        "title": "",
+                        "link_type": "1",
+                        "link_style": "1",
+                        "link": "",
+                        "target": "1"
+                    },
+                    {
+                        "title": "",
+                        "link_type": "1",
+                        "link_style": "1",
+                        "link": "",
+                        "target": "1"
+                    },
+                    {
+                        "title": "",
+                        "link_type": "1",
+                        "link_style": "1",
+                        "link": "",
+                        "target": "1"
+                    }
+                ]
+            }
+        ]
+    }
+}

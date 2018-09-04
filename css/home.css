@@ -1,0 +1,43 @@
+/* <!-- content --> */
+@import url("banner.css");
+.nubia-content{
+    background-color: #efeeeb;
+}
+.nubia-new-goods_show{
+    padding-bottom: 0;
+    background-color: #222;
+    width: 1425px; 
+}
+.nubia-new-goods_show ul{
+    height: 310px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nubia-new-goods_show ul{
+    list-style: none;
+}
+.nubia-new-goods_show li a{
+    position: relative;
+    float: left;
+    display: inline-block;
+    height: 310px;
+    overflow: hidden;
+    border: 2px solid #efeeeb;
+}
+
+.nubia-new-goods_show li a img{
+    opacity: 1;
+    width: 470px;
+    transform: scale(1.05,1.05);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: transform 1.6s,opacity 1.1s;
+    transition-timing-function:cubic-bezier(0,0.3,0.8,1);
+}
+.nubia-new-goods_show li a:hover img{
+    opacity: 0.7;
+    transform: scale(1,1)
+}
+

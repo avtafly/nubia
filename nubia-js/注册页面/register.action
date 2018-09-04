@@ -1,0 +1,556 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+	<meta charset="UTF-8">
+	<title>用户注册——努比亚官方网站</title>
+	<link rel="stylesheet" href="/res1/css/base.css">
+	<link rel="stylesheet" href="/res1/css/validform.css">
+</head>
+<body>
+<style>
+
+
+	.container {width: 850px;margin: 0 auto;margin-top: 60px; background: #fff;padding-bottom: 40px;margin-bottom: 40px;}
+	#registerform{width: 370px; margin: 0 auto; }
+	.logo{background: url(../res1/images/nubia-logo.png) no-repeat; background-position:0 -55px;width: 156px;height: 55px;margin:0 auto;margin-bottom: 20px;position: relative;top: 15px;}
+	.navTab{font-size: 18px;color:#333;margin:0 auto;text-align: center;margin-bottom: 20px;}
+	.navTab label{display: inline-block;}
+	.navTab label.cur{color:#e8380d;}
+	.navCon {width:360px;margin:0 auto;}
+	.navCon dl{line-height: 1.5;position: relative;}
+	.navCon .input-con {margin-bottom: 20px;}
+	.navCon .input-con input{width: 100%; height: 50px;line-height: 50px;padding-left:10px;border:1px solid #e0e4e7;vertical-align: middle;font-size: 12px;}
+	.navCon .input-con .btn-code{border-left:1px solid #e0e4e7;display: inline-block;position: absolute;top:0;right: 0;height: 50px;line-height: 1.5;padding: 0;cursor: pointer;background:#fff;width: 100px;text-align: center;}
+	.capcha{display: inline-block;}
+	.capcha img{height: 48px;width: 120px;vertical-align: middle;display: inline-block;}
+	#tab-mobile, #tab-email{display: none;}
+	#theAgreement a{color:#e8380d;}
+	#regButton{width:360px;height:50px;line-height:50px;margin-bottom:20px;font-size:20px;background: #e8380d;color: #fff;border:none;cursor: pointer;}
+	.check_tips {
+		position: absolute;
+		width: 300px;
+		top: 15px;
+		left: 370px;
+	}
+	.error_tip{
+		font-size: 12px;
+		color: red;
+	}
+</style>
+<div class="container">
+	<div class="logo"></div>
+	<form action="/register/doregister.action" method="post" id="registerform">
+		<input type="hidden" name="register_tag" value="8be5a1cd2f90a23e7adbd280f171c68d">
+		<!-- 			<ul class="navTab" id="tab_nav">
+                        <li class="cur tab-btn">
+                            <label for="tab-mobile"><input type="radio" name="myradio" id="tab-mobile" value="mobile" checked="checked">用手机号码注册账号</label>
+                        </li>
+                        |
+                        <li class="tab-btn">
+                            <label for="tab-email"><input type="radio" name="myradio" id="tab-email" value="email">用电子邮箱注册账号</label>
+                        </li>
+                    </ul> -->
+
+		<div class="navTab" id="tab_nav">
+			<label for="tab-mobile" class="tab-btn cur" style="margin-right:8px"><input type="radio" name="myradio" id="tab-mobile" value="mobile" checked="checked">用手机号码注册账号</label>|
+			<label for="tab-email" class="tab-btn" style="margin-left:8px"><input type="radio" name="myradio" id="tab-email" value="email">用电子邮箱注册账号</label>
+		</div>
+
+		<div class="navCon" id="tab_con">
+			<div class="reg-phone">
+				<dl>
+					<dd>
+						<div class="input-con"><input type="text" id="mobile" name="mobile" placeholder="请输入手机号码" datatype="m" errormsg="手机号码格式错误" ajaxurl="/register/ajaxcheckmobile2.action"> </div>
+						<div class="checktip"></div>
+					</dd>
+				</dl>
+				<dl>
+					<dd>
+						<div class="input-con">
+							<input type="password" id="passwordMobile" placeholder="密码为6-16个字符（数字、字母、符号至少包含两种）" datatype="s6-16" errormsg="密码为6-16个（数字、字母、符号至少包含</br>两种）">
+							<input type="hidden" id="passwordMobile_md5" name="passwordMobile">
+						</div>
+						<div class="checktip"></div>
+					</dd>
+				</dl>
+				<dl>
+					<dd>
+						<div class="input-con">
+							<input type="text" id="mobile_captcha" name="mobile_captcha" placeholder="请输入验证码（不区分大小写）" ajaxurl="/verification/check2.action" errormsg="验证码有错误" style="width:235px;">
+							<div class="capcha capcha-mobile">
+								<a href="javascript:;"><img id="mobile_captchaImg" src="/verification/draw.action" alt=""></a>
+							</div>
+						</div>
+						<span class="check_tips succ_tips" id="mobile_captcha_succ_tag"></span>
+						<span class="check_tips error_tip" id="mobile_captcha_error_tag" ></span>
+					</dd>
+				</dl>
+				<dl>
+					<dd>
+						<div class="input-con">
+							<input type="text" id="mobileValidateCode" name="mobileValidateCode" placeholder="请输入手机收到的验证码">
+							<input type="button" value="获取验证码" class="btn-code" id="btn-code-mobile">
+						</div>
+						<div class="checktip"><span class="Validform_checktip Validform_wrong"></span></div>
+					</dd>
+				</dl>
+			</div>
+			<div class="reg-mail">
+				<dl>
+					<dd>
+						<div class="input-con">
+							<input type="text" id="email" name="email" placeholder="请输入常用邮箱地址" datatype="e" errormsg="邮箱地址格式错误" ajaxurl="/login/checkEmail2.action">
+						</div>
+						<div class="checktip"></div>
+					</dd>
+				</dl>
+				<dl>
+					<dd>
+						<div class="input-con">
+							<input type="password" id="passwordEmail"  placeholder="密码为6-16个字符（数字、字母、符号至少包含两种）" datatype="s6-16" errormsg="密码为6-16个（数字、字母、符号至少包含</br>两种）">
+							<input type="hidden" id="passwordEmail_md5" name="passwordEmail">
+						</div>
+						<div class="checktip"></div>
+					</dd>
+				</dl>
+				<dl>
+					<dd>
+						<div class="input-con">
+							<input type="text" id="email_captcha" name="captcha" placeholder="请输入验证码（不区分大小写）"  ajaxurl="/verification/check2.action" errormsg="验证码有错误" style="width:235px;">
+							<div class="capcha capcha-email">
+								<a href="javascript:;"><img id="email_captchaImg" src="/verification/draw.action" alt=""></a>
+							</div>
+						</div>
+						<span class="check_tips succ_tips" id="email_captcha_succ_tag"></span>
+						<span class="check_tips error_tip" id="email_captcha_error_tag" ></span>
+					</dd>
+				</dl>
+				<dl>
+					<dd>
+						<div class="input-con">
+							<input type="text" id="emailValidateCode" name="emailValidateCode" placeholder="请输入邮箱收到的验证码">
+							<input type="button" value="获取验证码" class="btn-code" id="btn-code-email">
+						</div>
+						<div class="checktip"><span class="Validform_checktip Validform_wrong"></span></div>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="regfooterbar" style="width:360px;margin-left:8px;">
+			<div class="safe">
+				<div id="theAgreement" style="text-align:left;margin-bottom:10px">
+					<input type="checkbox" checked="checked" value="1" title="需要同意《用户服务协议》" name="agreement" id="agreement">我已阅读并接受
+					<a href="/res/html/agreement.html" title="用户协议" target="_blank">用户协议</a>和
+					<a href="/res/html/privacy.html" title="隐私政策" target="_blank">隐私政策</a>
+				</div>
+				<div id="theAgreementAdvice" class="hint clear"></div>
+			</div>
+			<div class="buttons">
+				<input type="hidden" name="back_url" value="http://www.nubia.com/profile.php?a=login&amp;amp;returnUrl=%2Fmember.php">
+				<input type="submit" class="btn" value="提    交" name="regButton" id="regButton">
+			</div>
+			<p style="text-align:right;">已有账号，<a href="/login/gologin.action?back_url=https%3A%2F%2Faccount.nubia.com%2Flogin%2Findex.action" style="color:#e8380d;">直接登录</a></p>
+		</div>
+	</form>
+</div>
+
+<!--div id="nb-footer">
+    <div class="nubia-copyright">
+        <div class="nubia-foot-nav">
+            <a target="_blank" href="http://www.nubia.com/service.php?sid=6">关于我们</a>|<a target="_blank" href="http://www.nubia.cn/service.php?sid=7">联系我们</a>|<a target="_blank" href="http://www.nubia.cn/news.php">新闻中心</a>|<a target="_blank" href="http://nubia2016.zhaopin.com/">加入我们</a>|<a target="_blank" href="http://www.nubia.cn/gongyi.php">公益</a>|<a target="_blank" href="http://www.nubia.cn/starsky.php">星空之约</a>
+        </div>
+            <span class="nb-footer-func">
+                <a class="nb-apk-ico" target="_blank" href="http://app.nubia.cn/download/download_app/33"></a>
+                <a class="nb-cloud-ico" target="_blank" href="http://yun.baidu.com/xcloud/nubia/pan"></a>
+                <a class="nb-weibo-ico" target="_blank" href="http://www.weibo.com/p/1006062156294570"></a>
+                <a class="nb-weixin-ico" href="#"></a>
+                <a class="nb-service-ico" href="javascript:;" onclick="window.open('http://livechat1.zte.com.cn/looyu/chat/p.do?c=1&amp;f=60', 'chat', 'height=460,width=690,directories=no,location=no,menubar=no,resizeable=no,status=no,toolbar=no,top=100,left=200')"></a>
+                <strong class="nb-tel-ico"></strong>
+                <div class="nb-footer-wx-layer">
+                    <img src="/res1/images/nb-weixin-code-figure.jpg">
+                </div>
+            </span>
+        <p class="nb-footer-info"> 2012-2016 努比亚 版权所有 <a href="http://www.miibeian.gov.cn/">粤ICP备10006213号-2</a> ICP经营许可证编号：粤B2-20120688<a href="https://cert.ebs.gov.cn/D52B1891-CB9A-4FD0-8BC6-1D5650B567CE" target="_blank" style="margin-right: 5px;margin-left: 3px;"><img src="/res1/images/govIcon.png" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示" border="0" style="border-width:0px;border:hidden; border:none;vertical-align: middle;height: 18px;"></a> 努比亚技术有限公司</p>
+    </div>
+</div-->
+
+<style>
+.nubia-copyright .nb-footer-info{
+	-webkit-transform: scale(0.9) translateX(0px);
+    -moz-transform: scale(0.9) translateX(0px);
+    -ms-transform: scale(0.9) translateX(0px);
+    transform: scale(0.9) translateX(0px);
+}
+.nubia-copyright{
+	text-align:center;
+	margin: 0 auto;
+}
+#nb-footer{
+	padding: 10px 0 50px 0;
+}
+@media only screen and (max-width: 950px){
+	#nb-footer .nubia-copyright {
+		min-width:100%!important;
+		width:100%;
+	}
+}
+</style>
+	<div id="nb-footer">
+    <div class="nubia-copyright">
+        <p class="nb-footer-info"> 2012-2017 努比亚 版权所有 <a href="http://www.miibeian.gov.cn/">粤ICP备10006213号-2</a> ICP经营许可证编号：粤B2-20120688<a href="https://cert.ebs.gov.cn/D52B1891-CB9A-4FD0-8BC6-1D5650B567CE" target="_blank" style="margin-right: 5px;margin-left: 3px;"><img src="/res1/images/govIcon.png" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示" border="0" style="border-width:0px;border:hidden; border:none;vertical-align: middle;height: 18px;"></a> 努比亚技术有限公司</p>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37192071-15']);
+  _gaq.push(['_setDomainName', 'nubia.cn']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var _hmt = _hmt || [];
+  ;(function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?c44d806574aa444392aa55d7c5cac06a";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+
+  var _hmt = _hmt || [];
+  ;(function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?6540b87466059bace9f209f77afd6e10";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  
+  var _hmt = _hmt || [];
+  ;(function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?ed03287223030af4802489c1974077c6";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+
+!(function(a,b,c,d,e,f){var g="",h=a.sessionStorage,i="__admaster_ta_param__",j="tmDataLayer"!==d?"&dl="+d:"";
+if(a[f]={},a[d]=a[d]||[],a[d].push({startTime:+new Date,event:"tm.js"}),h){var k=a.location.search,
+l=new RegExp("[?&]"+i+"=(.*?)(&|#|$)").exec(k)||[];l[1]&&h.setItem(i,l[1]),l=h.getItem(i),
+l&&(g="&p="+l+"&t="+ +new Date)}var m=b.createElement(c),n=b.getElementsByTagName(c)[0];m.src="//tag.cdnmaster.cn/tmjs/tm.js?id="+e+j+g,
+m.async=!0,n.parentNode.insertBefore(m,n)})(window,document,"script","tmDataLayer","TM-398681","admaster_tm");	
+</script>
+</body>
+</html>
+
+<script src="/res1/js/jquery.min.js"></script>
+<script src="/res1/js/hash.js"></script>
+<script src="/res1/js/placeholders.jquery.js"></script>
+<script src="/res1/js/Validform_v5.3.2_min.js"></script>
+
+<script>
+	$(document).ready(function() {
+
+		function tab(tab_nav,hover,tab_con,num){
+			num=(typeof(num)=='undefined')?0:num;
+			$('#'+tab_nav+'>label').eq(num).addClass(hover).siblings('label').removeClass(hover);
+			$('#'+tab_con+'>div').eq(num).show().siblings('div').hide();
+			var $div_label =$('#'+tab_nav+' label');
+			$div_label.click(function(){
+				$(this).addClass(hover).siblings('label').removeClass(hover);
+				$('#'+tab_nav+' input').removeAttr('checked','checked');
+				var index =  $div_label.index(this);
+				$('#'+tab_nav+' input').eq(index).attr('checked','checked');
+				$('#'+tab_con+'>div').eq(index).show().siblings('div').hide();
+				$('.capcha').eq(index).trigger('click');
+				$("#registerform").Validform().resetForm();
+				$('.Validform_checktip').text('');
+			});
+		}
+
+		tab('tab_nav','cur','tab_con',0);
+
+
+
+		// 倒计时
+		var wait = 60;
+		function time(o) {
+			if (wait == 0) {
+				$(o).css('background', '#fff');
+				o.removeAttribute("disabled");
+				o.value = "获取验证码";
+				wait = 60;
+			} else {
+				$(o).css('background', '#C0C0C0');
+				o.setAttribute("disabled", true);
+				o.value = "重新发送(" + wait + ")";
+				wait--;
+				setTimeout(function() {
+					time(o);
+				}, 1000);
+			};
+		}
+		$("#registerform").Validform({
+			tiptype:2,
+			ignoreHidden:true,
+			check:true,
+			datatype:{
+				"s6-16": /(?!^[0-9]+$)(?!^[A-z]+$)(?!^[^A-Za-z0-9]+$)^.{6,16}$/,
+				"m" : /^\d{11}$/
+			},
+			beforeSubmit:function(){
+				passwordMd5();
+				_smq.push(['custom', 'PC', 'zhuce']);
+			}
+		}).addRule([
+			{
+				datatype:"s6-16",
+				nullmsg:"请输入密码"
+			},
+			{
+				datatype : "m"
+			}
+		]);
+
+		$('#mobile_captcha').blur(function(){
+			var val = $(this).val();
+			if(val == ''){
+				$('#mobile_captcha_succ_tag').hide();
+				$('#mobile_captcha_error_tag').html("验证码不能为空").show();
+			} else {
+				check_captcha("mobile");
+			}
+		});
+
+		$('#email_captcha').blur(function(){
+			var val = $(this).val();
+			if(val == ''){
+				$('#email_captcha_succ_tag').hide();
+				$('#email_captcha_error_tag').html("验证码不能为空").show();
+			} else {
+				check_captcha('email');
+			}
+		});
+
+		function check_captcha(mode){
+			if (mode == "mobile") {
+				var captcha = $('#mobile_captcha');
+				var succ_tag = $('#mobile_captcha_succ_tag');
+				var err_tag = $('#mobile_captcha_error_tag');
+			} else {
+				var captcha = $('#email_captcha');
+				var succ_tag = $('#email_captcha_succ_tag');
+				var err_tag = $('#email_captcha_error_tag');
+			}
+			var val = captcha.val();
+			var tag = false;
+			if ('' == val){
+				succ_tag.hide();
+				err_tag.html("验证码不能为空").show();
+			} else {
+				$.ajax({
+					type : "post",
+					url : '/verification/check.action',
+					data : {captcha : val},
+					dataType : "json",
+					async : false,
+					success : function(r){
+						if (r.result){
+							succ_tag.show();
+							err_tag.hide();
+							tag = true;
+						} else {
+							succ_tag.hide();
+							err_tag.html("错误的验证码，请重新输入").show();
+							//验证码错误重新请求
+							$("#"+mode+"_captchaImg").attr('src', '/verification/draw.action?' + Math.random());
+						}
+					}
+				});
+			}
+			return tag;
+		}
+
+		function check_captcha_not_null(mode){
+			if (mode == "mobile") {
+				var captcha = $('#mobile_captcha');
+				var succ_tag = $('#mobile_captcha_succ_tag');
+				var err_tag = $('#mobile_captcha_error_tag');
+				if ('' == captcha.val()){
+					succ_tag.hide();
+					err_tag.html("验证码不能为空").show();
+					return false;
+				}
+				var mobileValidateCode_val = $('#mobileValidateCode').val();
+				if('' == mobileValidateCode_val){
+					$('#mobileValidateCode').parent().next().find('span').text('手机验证码不能为空');
+					return false;
+				}
+			} else {
+				var captcha = $('#email_captcha');
+				var succ_tag = $('#email_captcha_succ_tag');
+				var err_tag = $('#email_captcha_error_tag');
+				if ('' == captcha.val()){
+					succ_tag.hide();
+					err_tag.html("验证码不能为空").show();
+					return false;
+				}
+				var emailValidateCode_val = $('#emailValidateCode').val();
+				if('' == emailValidateCode_val){
+					$('#emailValidateCode').parent().next().find('span').text('邮箱验证码不能为空');
+					return false;
+				}
+			}
+
+			return true;
+		}
+
+		$('#regButton').on('click', function(){
+			if (!($('#agreement').prop('checked'))){
+				alert('未同意相关协议，将无法进行注册');
+				return false;
+			}
+			var submitmode = $("input[name='myradio']:checked").val();
+			if (!check_captcha_not_null(submitmode)){
+				return false;
+			}
+			$("#registerform").submit();
+
+		})
+
+		function passwordMd5(){
+			$("#passwordEmail_md5").val(hex_md5($("#passwordEmail").val()));
+			$("#passwordMobile_md5").val(hex_md5($("#passwordMobile").val()));
+		}
+
+		// 图形验证码
+		$('.capcha-email, .capcha-mobile').on('click', function(){
+			var $redrawimg = $(this).find('img');
+			$redrawimg.attr('src', '/verification/draw.action?' + Math.random());
+		})
+
+
+		//请求手机 && 邮箱验证码
+		$('#btn-code-mobile').on('click', function(){
+			var $mobile_captcha = $('#mobile_captcha'),
+					$mobile = $('#mobile'),
+					$mobileValidateCode = $('#mobileValidateCode'),
+					mobileVal = $('#mobile').val();
+			mobile_captcha = $('#mobile_captcha').val();
+			$('.capcha-email, .capcha-mobile').attr('src', '/verification/draw.action?' + Math.random());
+			if(!$mobile_captcha.hasClass('Validform_error')  && !$mobile.hasClass('Validform_error') && $mobile_captcha.val()!=='' && $mobile.val()!==''){
+				time(this);
+				$.ajax({
+					url: '/register/ajaxsendmobilecode.action',
+					dataType:'json',
+					data: {
+						mobile : mobileVal,
+						captch_code : mobile_captcha
+					}
+				})
+						.done(function(ret) {
+							if(ret.code == 0){
+								$mobileValidateCode.parent().next().find('span').text('');
+							}else{
+								$mobileValidateCode.parent().next().find('span').text(ret.error_msg);
+							}
+						})
+						.fail(function() {
+							$mobileValidateCode.parent().next().find('span').text("网络繁忙，请重试");
+						})
+			}else{
+				$mobileValidateCode.parent().next().find('span').text('图片验证码或手机号码有误');
+			}
+		})
+
+		$('#btn-code-email').on('click', function(){
+			var $email_captcha = $('#email_captcha'),
+					$email = $('#email'),
+					$emailValidateCode = $('#emailValidateCode'),
+					emailVal = $('#email').val();
+			email_captcha = $('#email_captcha').val();
+			$('.capcha-phone, .capcha-email').attr('src', '/verification/draw.action?' + Math.random());
+			if(!$email_captcha.hasClass('Validform_error')  && !$email.hasClass('Validform_error') && $email_captcha.val()!=='' && $email.val()!==''){
+				time(this);
+				$.ajax({
+					url: '/register/ajaxsendemailcode.action',
+					dataType: 'json',
+					data: {
+						email : emailVal,
+						captch_code : email_captcha
+					}
+				})
+						.done(function(ret) {
+							if(ret.code == 0){
+								$emailValidateCode.parent().next().find('span').text('');
+							}else{
+								$emailValidateCode.parent().next().find('span').text(ret.error_msg);
+							}
+						})
+						.fail(function() {
+							$emailValidateCode.parent().next().find('span').text("网络繁忙，请重试");
+						})
+			}else{
+				$emailValidateCode.parent().next().find('span').text('图片验证码或手机号码有误');
+			}
+		})
+
+		//验证手机 && 邮箱验证码
+		$('#mobileValidateCode').on('blur', function(){
+			var mobileValidateCode_val = $('#mobileValidateCode').val(),
+					mobile_val = $('#mobile').val(),
+					$mobileValidateCode = $('#mobileValidateCode');
+
+			$.ajax({
+				url: '/register/ajaxvalidatemobilecode.action',
+				dataType: 'json',
+				data: {
+					mobile: mobile_val,
+					code :mobileValidateCode_val
+				}
+			})
+					.done(function(ret) {
+						if(ret.code == 0){
+							$mobileValidateCode.parent().next().find('span').text('');
+						}else{
+							$mobileValidateCode.parent().next().find('span').text(ret.error_msg);
+						}
+					})
+					.fail(function() {
+						alert('网络繁忙，请重试')
+					})
+		})
+
+		$('#emailValidateCode').on('blur', function(){
+			var emailValidateCode_val = $('#emailValidateCode').val(),
+					email_val = $('#email').val(),
+					$emailValidateCode = $('#emailValidateCode');
+
+			$.ajax({
+				url: '/register/ajaxvalidateemailcode.action',
+				dataType: 'json',
+				data: {
+					email: email_val,
+					code :emailValidateCode_val
+				}
+			})
+					.done(function(ret) {
+						if(ret.code == 0){
+							$emailValidateCode.parent().next().find('span').text('');
+						}else{
+							$emailValidateCode.parent().next().find('span').text(ret.error_msg);
+						}
+					})
+					.fail(function() {
+						alert('网络繁忙，请重试')
+					})
+		})
+	});
+</script>
+</body>
+</html>

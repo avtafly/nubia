@@ -1,0 +1,221 @@
+<html lang="en">
+
+<head>
+<title>努比亚手机-官方网站</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta property="wb:webmaster" content="6bdcc5762d77ce58" />
+<meta property="qc:admins" content="4267477257665211636" />
+<meta name="baidu-site-verification" content="YjQteHb3gi" />
+<meta name="charset" content="utf-8" />
+<meta name="wb:webmaster" content="6bdcc5762d77ce58" />
+<meta name="keywords" content="nubia,努比亚,努比亚手机,努比亚官网,努比亚红魔,红魔手机,红魔,努比亚Z18mini,努比亚Z17S,努比亚Z17,Z17,努比亚V18" />
+<meta name="description" content="努比亚,新锐高端智能手机品牌,以专业摄影,极致游戏体验,无边框等为特色,代表产品有红魔游戏手机,Z18mini,Z17S等,品质保证." />
+<meta name="baidu-site-verification" content="f1lAnETopJ" />
+<link rel="shortcut icon" href="//static.nubia.cn/images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="//static.nubia.cn/v2/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" href="//static.nubia.cn/v2/css/nubia-ui.css" />
+<link rel="stylesheet" href="//static.nubia.cn/v2/css/flag.css" />
+<link rel="stylesheet" href="//static.nubia.cn/v2/css/store.css" />
+<link rel="stylesheet" href="//static.nubia.cn/v2/css/typo.css" />
+<link rel="stylesheet" href="//static.nubia.cn/v2/css/carousel-shop.css" />
+<script src="//shop-soa-static.nubia.com/res/ajaxUtils.js"></script>
+</head>
+
+<style>
+.caption-sm-bottom-left,.caption-sm-bottom-middle,.caption-sm-bottom-right{top:auto; bottom:20px; left:10%;}
+.caption-sm-middle-left, .caption-sm-middle,.caption-sm-middle-right {top: 56%; transform: translateY(-50%);}
+.caption-sm-top-middle, .caption-sm-middle, .caption-sm-bottom-middle{left: 50%; transform: translateX(-50%); right: auto;}
+.caption-sm-top-right,.caption-sm-middle-right,.caption-sm-bottom-right{right:10%; left: auto;}
+.caption-sm-top-middle{top: 50px;}
+.caption-sm-middle{top: 56%; left: 50%; transform: translate(-50%, -50%); }
+
+.carousel-inner .text-dark .btn-link-inverse, .carousel-inner .text-dark h3{color: #414143;}
+.carousel-inner .text-dark .btn-link-inverse:hover{color: #e95f46;}
+.carousel-inner .fill{cursor: pointer;}
+.carousel-inner .item a{display: inline; text-decoration: none;}
+.btn-link-inverse:hover, .btn-link-inverse:focus{border: none;}
+
+.carousel-inner .btn{border: none;}
+.carousel-inner .icon-arrow-right3{color: #fff;}
+.carousel-inner .btn-video:hover .icon-arrow-right3{color: #e95f46;}
+
+ul li{list-style: none;}
+#nb-extra-tool ul{padding: 0;}
+</style>
+
+<body>
+<script>
+fetchURL("/page/header");
+</script>
+<div id="index">
+<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" v-for="i in sliders.length" :class="{active:(i-1)==0}" :data-slide-to="i-1"></li>
+    </ol>
+    <!-- Carousel items -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item" v-for="(slider,i) in sliders" :class="{active:i==0}">
+            <div class="fill" :style="{'background-image':'url('+oss_url+slider.big_image+')'}" @click="winShow(slider)"></div>
+            <div v-if="slider.isbtn" :class="'carousel-caption '+btnStyle[slider.title_position]+textStyle[slider.content_bg_color]"  >
+            	<h2 >{{slider.title}}</h2>
+            	<h3 class="text-primary" data-animation="animated fadeInDown">{{slider.sub_title}}</h3>
+            	<template v-for="btn in slider.btn_lists" >
+	            	<a v-if="btn.link_type == 0" v-show="btn.link" :href="btn.link">
+	                    <button v-if="btn.link_style==2" data-animation="animated fadeInDown" class="btn btn-lg btn-buy mvm "><span>{{btn.title}}</span></button>
+	                    <button v-else data-animation="animated fadeInDown" class="btn btn-lg mvm btn-link btn-link-inverse">{{btn.title}}</button>
+	                </a>
+	                <a v-else class="btn-video" v-show="btn.link" :href="btn.link">
+	                    <button data-animation="animated fadeInDown" class="btn btn-lg mvm btn-link btn-link-inverse"><span class="icon-arrow-right3 mrs"></span>{{btn.title}}</button>
+	                </a>
+                </template>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel nav -->
+    <a class="left carousel-control" href="#carousel" data-slide="prev">
+        <span class="icon-arrow-left4"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel" data-slide="next">
+        <span class="icon-arrow-right4"></span>
+    </a>
+</div>
+<div class="bg-base-dark" style="padding-top: 3px;">
+    <div class="featured-items-container clearfix">
+        <ul class="featured-items no-gutter" v-for="featured in featureds">
+            <li class="featured-item col-xs-12 col-sm-4">
+                <a :class="[featured.media_type==1?'':'btn-video']" :href="featured.media_type ==1?featured.link:'#'" @click="recommed(featured)">
+                    <div class="featured-item__image" :style="{'background-image':'url('+oss_url+featured.big_image+')'}"></div>
+                    <div class="featured-item__heading">
+                        <h3 class="">{{featured.title}}</h3>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+<div class="modal fade" id="videoBanner" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-hg modal-inverse">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close icon-times" data-dismiss="modal">
+                <span class="sr-only">Close</span>
+            </button>
+            <h4 class="modal-title" id="ModalLabel">video</h4>
+        </div>
+        <div style="position: relative;">
+            <div class="videocover text-center">&nbsp;
+                <i class="icon-circle_arrow-right3"></i>
+            </div>
+            <video class="video-player" width="100%" preload="auto">
+                <source src="" type="video/mp4"> Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+var BANNER_BTN_POST = {
+    11: 'text-sm-left caption-sm-top-left',
+    12: 'text-sm-center caption-sm-top-middle',
+    13: 'text-sm-right caption-sm-top-right',
+    21: 'text-sm-left caption-sm-middle-left',
+    22: 'text-sm-center caption-sm-middle',
+    23: 'text-sm-right caption-sm-middle-right',
+    31: 'text-sm-left caption-sm-bottom-left',
+    32: 'text-sm-center caption-sm-bottom-middle',
+    33: 'text-sm-right caption-sm-bottom-right',
+    0: 'text-sm-left',
+}
+var BANNER_FONT_STYLE = {
+    '1':" text-dark text-inverse",
+    "2":" ",
+    '0':" ",
+}
+
+new Vue({
+    el: '#index',
+    data: {
+        oss_url: '//oss.static.nubia.cn/',
+        apiURL: '/show/page/block?pageType=1',
+        btnStyle:BANNER_BTN_POST,
+        textStyle:BANNER_FONT_STYLE,
+        sliders: [],
+        featureds: []
+    },
+    mounted: function () {
+        this.getPage();
+    },
+    methods: {
+        getPage: function () {
+            var vm = this;
+            $.ajax({
+                url: vm.apiURL,
+                success: function (res) {
+                    var datas = res.data[101]||[];
+                    $.each(datas, function(i, item) {
+                    	item.isbtn = item.btn_lists.some(function(item){
+                    		return item.link != '';
+                    	})
+                		vm.sliders[i] = item;
+                    });
+                    vm.featureds = res.data[102]||[];
+                }
+            });
+        },
+        winShow: function (slider) {
+        	if(!slider.isbtn){
+        		specialnubiabee('trackStructEvent','portal_index_banner','count',1,{});
+        		window.location.href = slider.link;
+        	}
+        },
+        recommed: function(featured){
+        	specialnubiabee('trackStructEvent','portal_index_recommend','count',1,{})
+        	if(featured.media_type != 1){
+        		event.preventDefault();
+        		var href = featured.file_path,
+		            title = featured.title,
+		            $modal = $('#videoBanner');
+		
+		        $modal.find('video').attr('src', href);
+		        $('#ModalLabel').text(title);
+		        $modal.modal();
+        	}
+        }
+    }
+});
+$(function () {
+    $("#carousel").carousel({
+        interval: 9000,
+        pause: false
+    });
+	
+    $(".videocover").click(function () {
+        var $this = $(this),
+            $video = $(this).next();
+
+        $video.get(0).play();
+        $video.get(0).controls = true;
+        $video.on("play", function () {
+            $this.hide();
+        }).on("pause", function () {
+            $this.show();
+        });
+    });
+    $(".video-player").on("click", function () {
+        $(this).get(0).pause();
+    }).bind("pause ended", function () {
+        var $playBtn = $(this).prev();
+        $playBtn.show();
+    });
+    $(".close").on("click", function () {
+        $(".video-player").get(0).pause();
+    });
+});
+</script>
+<script src="//shop-soa-static.nubia.com/res/footer.js?v=0109"></script>
+
+</body>
+</html>

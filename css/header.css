@@ -1,0 +1,126 @@
+
+/* <!-------------------- navigator ------------------> */
+
+
+.nubia-header{
+    background:black;
+    width: 1425px;
+    height: 65px;
+
+}
+.nubia-header-logo{
+    width:200px;
+    height: 65px;
+    margin-left: 100px;
+    float: left;
+    text-align: center;
+    /* background: thistle; */
+
+}
+.nubia-header-navigator{
+    width: 820px;
+    height: 65px;
+    float: left;
+    /* background: slateblue; */
+
+
+}
+.nubia-header-navigator a{
+    line-height: 65px;
+    text-decoration:none;
+}
+.nubia-header-navigator a li:hover{
+    font-size: 18px;
+}
+.nubia-header-navigator a li{
+    /* background:orange; */
+    list-style: none;
+    display: inline;
+    padding-right: 10px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 1px;
+    padding:15px 25px;
+    
+}
+.nubia-header-goodscart{
+    /* background: green; */
+    
+    width: 180px;
+    height:65px;
+    margin-right: 120px;
+    float: right;
+
+}
+.nubia-header-goodscart .goodscarts{
+    display: inline-table;
+    height: 65px;
+    width: 120px;
+    margin-left: 25px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration:none;
+    background:#f25c4a;
+}
+.nubia-header-goodscart a img{
+    margin-top: 10px
+}
+
+
+/* -<---------------------.div[class='mask']------------------->*/
+
+
+.container{
+    text-align: center;
+    width:1425px;
+    height:240px;
+    z-index: 999;
+    background: rgba(49, 49, 49, 0.95);
+    position:absolute;
+}
+.container .list{
+    height: 240px;
+    width:1100px ;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+    display: flex;
+}
+.container .list a{
+    text-decoration: none;
+    color: white;
+    width:120px;
+    height: 180px;
+    padding: 30px;
+    
+}
+.container .list a img{
+    width:120px;
+    height: 120px;
+    padding-bottom: 15px;
+}
+.container .list a span{
+    font-size: 14px;
+}
+.container .list a:hover{
+    color:grey
+}
+.container>span{
+
+    top: 95px;
+    font-size: 25px;
+    color: gainsboro;
+    position: absolute;
+    cursor: pointer;
+    
+}
+.container>span:first-child{
+    left: 150px;
+}
+.container>span:last-child{
+    right: 150px;
+}

@@ -1,0 +1,166 @@
+
+    @-webkit-keyframes circle1{
+        0%{ -webkit-transform: scale(0.7);
+            -moz-transform: scale(0.7);
+            -ms-transform: scale(0.7);
+            transform: scale(0.7); }
+        90%{opacity: 0.9;}
+        100%{ -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); opacity: 0;}
+    }
+    @-webkit-keyframes circle2{
+        0%{ -webkit-transform: scale(0.7);
+            -moz-transform: scale(0.7);
+            -ms-transform: scale(0.7);
+            transform: scale(0.7); }
+        90%{opacity: 0.9;}
+        100%{ -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); opacity: 0;}
+    }
+
+    .summary_v1815_text{width: 100%;left:0;top:10%;text-align: center;}
+    .summary_v1815_img1{width: 59.296875%;left:27.03125%;top:25%;}
+    .summary_v1815_img2{width: 59.296875%;left:27.03125%;top:25%;}
+
+    .summary_v1816_text1{width: 100%;left:0;top:6%;text-align: center;}
+    .summary_v1816_text2{width: 45%;left:55%;top:45%;}
+    .summary_v1816_text3{width: 73.4375%;left:26.5625%;bottom:10%;}
+    .summary_v1816_text3>h2,.summary_v1816_text3>p{padding-left:2%;}
+    .summary_v1816_text3>ul{text-align: center;display: inline-block;}
+    .summary_v1816_text3>ul>li{float: left;text-align: center;padding:0 1.5rem;;position: relative;color:#000;}
+    .summary_v1816_text3>ul>li>p:nth-child(2){position: absolute;width: 120%;bottom:-2em;left:-10%;}
+    .summary_v1816_text3>ul>li>p>span{font-weight: 600;font-size: 1.1em;}
+
+    .moveup,.movedown{position: relative;transition: all 1s linear}
+    .carousel-inner > .item > img, .carousel-inner > .item > a > img{width: 100%;}
+
+
+    @media (min-width: 1900px){
+        .modal-hg {  width: 1200px;  }
+    }
+    @media (min-width: 1400px){
+        .modal-hg, .modal-lg {  width: 980px;  }
+    }</style><div class="summary_v18 big" style="min-width: 1200px;margin-top: 60px;">    <div class="summary_v181">        <div class="summary_v181-content"><img src="https://oss.static.nubia.cn/upload/5aaf66a50d0fa18.jpg" alt="" /></div>        <div class="summary_v181_text text color_fff t-left">            <p data-scroll-reveal="enter bottom but over 1s wait 0.3s and move 30px">6.01英寸FHD+18:9全面屏 ｜ 4000mAh大容量电池 <br />4GB+64GB ｜ 小牛语音</p>            <p data-scroll-reveal="enter bottom but over 1s wait 0.6s and move 30px">                <a style="color:#fff;" href="javascript:;" class="playbtn">观看产品视频  <img src="http://oss.static.nubia.cn/upload/59646cf593d5214.png" style="display:inline-block;width:1.5em;height:1.5em;position: relative;top: -0.1em;" alt="" /></a>              </p>        </div>        <div data-scroll-reveal="enter left but over 2s  and move 60px" class="summary_v181_img1 img_100"><img src="https://oss.static.nubia.cn/upload/5aaf66b08c97441.png" alt="" /></div>    </div>    <div class="summary_v182">        <ul>            <li><div>                <p><img src="https://oss.static.nubia.cn/upload/5aaf66a42748164.png" alt="" /></p>                <p><span>6.01吋FHD+全面屏</span> <br />震撼高清视界</p>            </div></li>            <li><div>                <p><img src="https://oss.static.nubia.cn/upload/5aaf66a42ce0141.png" alt="" /></p>                <p><span>4000mAh大电池</span> <br />充一次 玩两天</p>            </div></li>            <li><div>                <p><img src="https://oss.static.nubia.cn/upload/5aaf66a42a18b98.png" alt="" /></p>                <p><span>骁龙八核处理器</span> <br />高效性能</p>            </div></li>            <li><div>                <p><img src="https://oss.static.nubia.cn/upload/5aaf66a42e4709.png" alt="" /></p>                <p><span>4GB+64GB</span> <br />游戏更畅快</p>            </div></li>            <li style="clear:both;"><div>                <p><img src="https://oss.static.nubia.cn/upload/5aaf66a43aa5872.png" alt="" /></p>                <p><span>轻薄设计</span> <br />极致握持感</p>            </div></li>            <li><div>                <p><img src="https://oss.static.nubia.cn/upload/5aaf66a43c6ac17.png" alt="" /></p>                <p><span>后置13M+前置8M</span> <br />拍照更清晰</p>            </div></li>            <li><div>                <p><img src="https://oss.static.nubia.cn/upload/5aaf66a444e8f72.png" alt="" /></p>                <p><span>nubia UI 5.1</span> <br />系统快省稳</p>            </div></li>            <li><div>                <p><img src="https://oss.static.nubia.cn/upload/5aaf66a44710b83.png" alt="" /></p>                <p><span>小牛语音</span> <br />便捷智能操作</p>            </div></li>        </ul>    </div>    <div class="summary_v183">        <div class="summary_v183-content"><img src="https://oss.static.nubia.cn/upload/5aaf66b4ab64620.jpg" alt="" /></div>        <div class="summary_v183_text text color_fff">            <h2 data-scroll-reveal="enter bottom but over 1s wait 0.3s and move 30px">FHD+全面屏&nbsp;&nbsp;&nbsp;广阔大视野</h2>            <p data-scroll-reveal="enter bottom but over 1s wait 0.6s and move 30px">2160*1080高清全面屏设计，拥有6.01英寸大屏幕，更大的屏占比，带来更广阔的视野，全贴合高清屏幕通透明亮不伤眼，<br />细腻呈现画面的每一个细节，给你带来身临其境的体验。</p>            <ul data-scroll-reveal="enter bottom but over 1s wait 0.9s and move 30px">                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a44c53d38.png" alt="" /></p>                    <p><span>2160*1080</span><br />FHD＋全高清</p>                </li>                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a45f97383.png" alt="" /></p>                    <p><span>6.01英寸</span><br />18 : 9全面屏</p>                </li>                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a44fe5c96.png" alt="" /></p>                    <p><span>86.25%</span><br />屏占比</p>                </li>            </ul>        </div>        <div data-scroll-reveal="enter right but over 2s  and move 100px" class="summary_v183_img1 img_100"><img src="https://oss.static.nubia.cn/upload/5aaf66a47957f6.png" alt="" /></div>    </div>    <div class="summary_v184">        <div class="summary_v184-content"><img src="https://oss.static.nubia.cn/upload/5aaf66a502ea690.jpg" alt="" /></div>       <div class="summary_v184_img1 img_100"><img class="movedown" src="https://oss.static.nubia.cn/upload/5aaf66b3119ca92.png" alt="" /></div>       <div class="summary_v184_text text">            <h2 data-scroll-reveal="enter bottom but over 1s wait 0.3s and move 30px">强劲续航 <br />充一次，玩两天</h2>            <p data-scroll-reveal="enter bottom but over 1s wait 0.6s and move 30px">配备一颗4000mAh超大容量锂离子聚合物电池，在 NeoPower3.0 技术加持下，通过优化系统以及高性能低功耗的硬件，<br />将能效发挥到极致，实现充满一次电日常使用两天。V18的超强续航能力，不仅可以保障自身电量供给，必要时它可以变身成为                <br />移动电源为其他手机进行充电（OTG），一举两得。            </p>        </div>    </div>    <div class="summary_v185">        <div class="summary_v185-content"><img src="https://oss.static.nubia.cn/upload/5aaf66afdd21d81.jpg" alt="" /></div>        <div class="summary_v185_text1 text">            <h2 data-scroll-reveal="enter bottom but over 1s wait 0.3s and move 30px">续航十项全能数据</h2>        </div>        <div class="summary_v185_text2 text">            <p style="color:#a2a2a2;" data-scroll-reveal="enter bottom but over 1s wait 0.6s and move 30px">注：以上数据均为实验室测定值，实际使用可能会根据具体情况略有差异。</p>        </div>    </div>    <div class="summary_v186">        <div class="summary_v186-content"><img src="https://oss.static.nubia.cn/upload/5aaf66b4de4ea37.jpg" alt="" /></div>        <div class="summary_v186_text text">            <h2 data-scroll-reveal="enter bottom but over 1s wait 0.3s and move 30px">流畅运行&nbsp;&nbsp;&nbsp;海量存储</h2>            <p data-scroll-reveal="enter bottom but over 1s wait 0.6s and move 30px">主频高达2.0GHz的高通骁龙6系处理器，配备了4GB大运行内存，经过系统底层优化处理，带来疾速流畅的体验，64GB海量存储，<br />最大可支持扩展至128GB，再也不用为存储空间不足而焦虑，肆意下载你喜欢的游戏、电视剧、电影、音乐。</p>            <ul data-scroll-reveal="enter bottom but over 1s wait 0.9s and move 30px">                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a46b12125.png" alt="" /></p>                    <p><span>2.0GHz</span><br />高通骁龙八核处理器</p>                </li>                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a46e6a317.png" alt="" /></p>                    <p><span>4GB</span><br />运存</p>                </li>                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a48050023.png" alt="" /></p>                    <p><span>64GB</span><br />内存</p>                </li>                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a47062f84.png" alt="" /></p>                    <p><span>128GB</span><br />支持扩展卡</p>                </li>            </ul>        </div>        <div data-scroll-reveal="enter left but over 2s  and move 100px" class="summary_v186_img1 img_100"><img src="https://oss.static.nubia.cn/upload/5aaf66b37978c97.png" alt="" /></div>    </div>    <div class="summary_v187">        <div class="summary_v187-content"><img src="https://oss.static.nubia.cn/upload/5aaf66b07c73815.jpg" alt="" /></div>        <div class="summary_v187_text text color_fff">            <h2 data-scroll-reveal="enter bottom but over 1s wait 0.3s and move 30px">AI智能·  科技改变生活</h2>     </div>    </div>    <div class="summary_v188">        <div class="summary_v188-content"><img src="https://oss.static.nubia.cn/upload/5aaf66a5132b371.jpg" alt="" /></div>        <div class="summary_v188_text text">            <h2 data-scroll-reveal="enter bottom but over 1s wait 0.3s and move 30px">小牛语音&nbsp;&nbsp;&nbsp;省去繁琐查找</h2>            <p data-scroll-reveal="enter bottom but over 1s wait 0.6s and move 30px">V18带来更加智能的体验，全新的小牛语音，可以通过按下 <br />独立的小牛语音按键发送语音指令，系统会根据语音指                <br />令来智能查找联系人或开启应用，并且支持语音实时转文 <br />字，可将转换后的文字内容实时分享发送到微信、新建便 <br />签、新建日程、发送短信等。</p>        </div>        <div class="summary_v188_img1 img_100"><img src="https://oss.static.nubia.cn/upload/5aaf66ae1f5eb14.png" alt="" /></div>    </div>    <div class="summary_v189">        <div class="summary_v189-content"><img src="https://oss.static.nubia.cn/upload/5aaf66a509a0156.jpg" alt="" /></div>        <div class="summary_v189_text text color_fff">            <h2 data-scroll-reveal="enter bottom but over 1s wait 0.3s and move 30px">人脸解锁 <br />全新解锁方式更便捷</h2>            <p data-scroll-reveal="enter bottom but over 1s wait 0.6s and move 30px">抬起手机，点亮屏幕，完成解锁。你的脸，现在就是你的密码。人脸 <br />解锁功能为设备解锁提供了一种便捷、安全、私密的新方式。<br />同时，指纹解锁与人脸解锁的双加持，使体验更加丰富。</p>            <ul data-scroll-reveal="enter bottom but over 1s wait 0.9s and move 30px">                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a473b3a35.png" alt="" /></p>                    <p><span>极速</span><br />解锁</p>                </li>                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a48c98239.png" alt="" /></p>                    <p><span>1024个</span><br />特征纬度</p>                </li>                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a48e41b41.png" alt="" /></p>                    <p><span>活体检测</span><br />专业更安全</p>                </li>            </ul>          </div>        <div data-scroll-reveal="enter right but over 2s  and move 100px" class="summary_v189_img1 img_100"><img class="movedown" src="https://oss.static.nubia.cn/upload/5aaf66b5bd9b454.png" alt="" /></div>    </div>    <div class="summary_v1810">        <div class="summary_v1810-content"><img src="https://oss.static.nubia.cn/upload/5aaf66a5193fe32.jpg" alt="" /></div>        <div class="summary_v1810_text text">            <h2 data-scroll-reveal="enter bottom but over 1s wait 0.3s and move 30px">顺滑圆润的手感 </h2>            <p data-scroll-reveal="enter bottom but over 1s wait 0.6s and move 30px">整机轻奢圆润，曲面变化微妙，侧向凝光腰线，圆中带 <br />棱，视觉和手感上更纤薄。背部3D镭雕流畅曲线、金属                <br />色字符logo，全新工艺彰显精致细节。新增语音助手侧 <br />键，语音通话一键即达，独具特色。</p>            <ul data-scroll-reveal="enter bottom but over 1s wait 0.9s and move 30px">                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a49204276.png" alt="" /></p>                    <p>15道工艺 </p>                </li>                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a49415c30.png" alt="" /></p>                    <p>6道涂层  </p>                </li>                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a49a07627.png" alt="" /></p>                    <p>3D镭雕 </p>                </li>                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a4a06bf31.png" alt="" /></p>                    <p>超声亮边  </p>                </li>            </ul>        </div>        <div class="summary_v1810_img1 img_100"><img class="movedown" src="https://oss.static.nubia.cn/upload/5aaf66b5dc74c2.png" alt="" /></div>    </div>    <div class="summary_v1811">        <div class="summary_v1811-content"><img src="https://oss.static.nubia.cn/upload/5aaf66b3486b343.jpg" alt="" /></div>        <div class="summary_v1811_text text color_fff">            <h2 data-scroll-reveal="enter bottom but over 1s wait 0.3s and move 30px">捕捉精彩 · 享受致美瞬间</h2>            <p data-scroll-reveal="enter bottom but over 1s wait 0.6s and move 30px">V18搭载一颗1300万的后置摄像头，配合PDAF相位对焦技术，可实现0.1s快速对焦，让你抓住转瞬即逝的精彩。  </p>            <ul data-scroll-reveal="enter bottom but over 1s wait 0.9s and move 30px">                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a4a998c60.png" alt="" /></p>                    <p><span>后置1300万+前置800万</span><br />高清摄像头</p>                </li>                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a4af7d997.png" alt="" /></p>                    <p><span>0.1S</span><br />快速对焦</p>                </li>                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a4ad17c83.png" alt="" /></p>                    <p><span>F2.2</span><br />大光圈</p>                </li>            </ul>        </div>        <div data-scroll-reveal="enter left but over 2s  and move 100px" class="summary_v1811_img1 img_100"><img src="https://oss.static.nubia.cn/upload/5aaf66af2ab1916.png" alt="" /></div>    </div>    <div class="summary_v1812">        <div class="summary_v1812-content"><img src="https://oss.static.nubia.cn/upload/5aaf66a5225e822.jpg" alt="" /></div>        <div class="summary_v1812_text text">            <h2 data-scroll-reveal="enter bottom but over 1s wait 0.3s and move 30px">十级美颜&nbsp;&nbsp;&nbsp;美丽自拍</h2>            <p data-scroll-reveal="enter bottom but over 1s wait 0.6s and move 30px">通过AI智能算法，能够使磨皮、美肤、去眼袋等多种美颜效果融为 <br />一体，呈现出来的自拍效果更加美丽自然。十级美颜调节，让美变                <br />得更自由，让自拍变得更有乐趣！</p>        </div>        <div data-scroll-reveal="enter right but over 2s  and move 100px" class="summary_v1812_img1 img_100"><img src="https://oss.static.nubia.cn/upload/5aaf66b131f5c75.png" alt="" /></div>    </div>    <div class="summary_v1813">        <div id="myCarousel" class="carousel slide">            <ol class="carousel-indicators">                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>                <li data-target="#myCarousel" data-slide-to="1"></li>                <li data-target="#myCarousel" data-slide-to="2"></li>            </ol>            <div class="carousel-inner">                <div class="item active">                    <img src="https://oss.static.nubia.cn/upload/5aa798992f17364.jpg" alt="" />                    <div class="carousel-caption">                        <h2>时光相机</h2>                        <p>时光相机拍出的照片，焦点主体清晰而周围呈现放射性流动感，形成强烈的视觉冲击，<br />感觉好像置身时光隧道。这种“拉焦”的效果，往往是需要借助单反相机才能实现。</p>                    </div>                </div>                <div class="item">                    <img src="https://oss.static.nubia.cn/upload/5aa7989c59ac330.jpg" alt="" />                    <div class="carousel-caption">                        <h2>克隆相机</h2>                        <p>克隆相机是一款极具趣味的拍摄模式。通过连拍将移动的人、物克隆在同一个场景中，轻松实现充满创意的图像。<br />同一个场景里，同一个人摆不同的表情，扮不同的鬼脸，可以全部同时呈现出来。</p>                    </div>                </div>                <div class="item">                    <img src="https://oss.static.nubia.cn/upload/5aa7989a62a8347.jpg" alt="" />                    <div class="carousel-caption">                        <h2>手持电子光圈</h2>                        <p>电子光圈，可以轻松记录云彩轨迹，以及拍摄水流雾化效果，更多创意作品，随手可得。<br />通过调整电子光圈值进行长时间曝光，能够拍出极致动感的景色。 </p>                    </div>                </div>            </div>            <a class="carousel-control left icon-circle_arrow-left2" href="#myCarousel" data-slide="prev"></a>            <a class="carousel-control right icon-circle_arrow-right2" href="#myCarousel" data-slide="next"></a>        </div>    </div>    <div class="summary_v1814">        <div class="summary_v1814-content"><img src="https://oss.static.nubia.cn/upload/5aaf66a5294bb8.jpg" alt="" /></div>        <div class="summary_v1814_text1 text ">            <h2 data-scroll-reveal="enter bottom but over 1s wait 0.3s and move 30px">全网通4G + 双卡双待</h2>            <p data-scroll-reveal="enter bottom but over 1s wait 0.6s and move 30px">支持移动/联通/电信4G网络，双卡双待，支持双卡盲插。<br />同时支持高速4G+网络，及VoLTE高清视频通话。</p>        </div>        <div class="summary_v1814_text2 text ">            <p style="color:#8e8780;" data-scroll-reveal="enter bottom but over 1s wait 0.9s and move 30px">                注：<br />                1. 三选二卡槽，支持 Nano-SIM 卡 + Nano-SIM卡 或者 Nano-SIM <br />                卡 +  Micro-SD 扩展存储卡； <br />                2. 双Nano-SIM卡时，任意卡槽均可设置为主卡，其中一卡使用 <br />                数据业务上网时，另一卡仅能使用通话功能；<br />                3. 双卡槽不可同时使用两张电信卡；<br />                4. 该业务需当地运营商支持；            </p></div>        <div class="summary_v1814_img2 img_100"><img src="https://oss.static.nubia.cn/upload/5aaf66a4bcac580.png" alt="" /></div>        <div class="summary_v1814_img1 img_100"><img src="https://oss.static.nubia.cn/upload/5aaf66b3b236975.png" alt="" /></div>    </div>    <div class="summary_v1815">        <div class="summary_v1815-content"><img src="https://oss.static.nubia.cn/upload/5aaf66a531d3e75.jpg" alt="" /></div>        <div class="summary_v1815_text text color_fff">            <h2 data-scroll-reveal="enter bottom but over 1s wait 0.3s and move 30px">更加智能的NeoSmart引擎</h2>        </div>        <div data-scroll-reveal="enter left but over 2s  and move 100px" class="summary_v1815_img1 img_100"><img src="https://oss.static.nubia.cn/upload/5aaf66b5717513.png" alt="" /></div>        <div data-scroll-reveal="enter right but over 2s  and move 100px" class="summary_v1815_img2 img_100"><img src="https://oss.static.nubia.cn/upload/5aaf66b44d0bd76.png" alt="" /></div>    </div>    <div class="summary_v1816">        <div class="summary_v1816-content"><img src="https://oss.static.nubia.cn/upload/5aaf66a5492e260.jpg" alt="" /></div>        <div class="summary_v1816_text1 text">            <h2 data-scroll-reveal="enter bottom but over 1s wait 0.3s and move 30px">智慧引擎能主动学习用户习惯，越用越快</h2>            <p data-scroll-reveal="enter bottom but over 1s wait 0.6s and move 30px">并通过内存压缩、进程预启动、资源提前加载等技术，将资源分配给常用应用，用得越久，反应越快。<br />                联系人启动速度提升40%，相机启动速度提升55%。</p>        </div>        <div class="summary_v1816_text2 text">            <h2 data-scroll-reveal="enter bottom but over 1s wait 0.3s and move 30px">采用全新的“绝对零度” <br />技术，越用越省电</h2>            <p data-scroll-reveal="enter bottom but over 1s wait 0.6s and move 30px">智能识别应用运行状态，自动“冰封”异常耗电应用，冻结率 <br />高达90%，大幅降低后台应用耗电量。结合快速解冻技术，<br />亦可快速启动应用，无需频繁清理后台。省电，更省心。</p>        </div>        <div class="summary_v1816_text3 text">            <h2 data-scroll-reveal="enter bottom but over 1s wait 0.3s and move 30px">夜间深度优化 <br />每天醒来都宛如新生</h2>            <p data-scroll-reveal="enter bottom but over 1s wait 0.6s and move 30px">系统会利用夜间空闲时间进行系统优化，在不打扰用户使用的情况下，进行                <br />自动垃圾清理、病毒扫描、磁盘文件整理等，早上醒来，手机流畅如初。</p>            <ul data-scroll-reveal="enter bottom but over 1s wait 0.9s and move 30px">                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a4bb94811.png" alt="" /></p>                    <p><span>自动清理</span></p>                </li>                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a4c021081.png" alt="" /></p>                    <p><span>病毒扫描</span></p>                </li>                <li>                    <p><img src="https://oss.static.nubia.cn/upload/5aaf66a4cb51f36.png" alt="" /></p>                    <p><span>磁盘整理</span></p>                </li>            </ul>        </div>     </div></div><div class="modal fade in" id="videoBanner" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="false" style="display: none;">    <div class="modal-dialog modal-hg modal-inverse">        <div class="modal-content">            <div class="modal-header">                <button type="button" class="close icon-times" data-dismiss="modal"><span class="sr-only">Close</span></button>                <h4 class="modal-title" id="ModalLabel">V18产品视频</h4>            </div>            <div style="position: relative;">                <div class="videocover text-center">&nbsp;<em class="icon-circle_arrow-right3"></em></div>                <video preload="auto" class="video-player" width="100%" controls="controls" src="https://oss.static.nubia.cn/upload/5ab30151ca1a497.mp4">                    <source src="" type="video/mp4">                    Your browser does not support HTML5 video.                </source></video>            </div>        </div>    </div></div><script src="https://oss.static.nubia.cn/actitem/59269b9dded9f92.js" tag="user scripts"></script><script src="https://oss.static.nubia.cn/actitem/59dd65169c45693.js" tag="user scripts"></script><script tag="user scripts" src="https://oss.static.nubia.cn/actitem/599679d3ad9b062.js"></script><script tag="user scripts">$(function () {
+        $("a.playbtn").on("click", function(e){
+            e.preventDefault();
+            $("#videoBanner").modal();
+           setTimeout(function () {
+               $(".videocover").trigger("click");
+           },500);
+        });
+        $(".videocover").click(function() {
+            var $this = $(this),
+                    $video = $(this).next();
+
+            $video.trigger("play");
+
+            $video.on("play", function() {
+                $this.hide();
+            }).on("pause", function() {
+                $this.show();
+            });
+        });
+        $("#videoBanner .close").click(function () {
+            $(".video-player").trigger("pause");
+        });
+    })</script><script tag="user scripts" src="https://oss.static.nubia.cn/actitem/5aa7654ba6a3a37.js"></script>
+<style>
+    .btn-buy:before{
+        content:'';
+    }
+</style>
+
+<script src="//shop-soa-static.nubia.com/res/footer.js?v=0109"></script>
+
+<script tag="user scripts">
+    $(function(){
+        window.onscroll = function(){
+            var t = document.documentElement.scrollTop || document.body.scrollTop;
+            var sub_nav = document.getElementById("subNav");
+            if (sub_nav) {
+                if( t >= 60 ) {
+                    $("#subNav").css('top', '0px');
+                } else {
+                    $("#subNav").css('top', '60px');
+                }
+            }
+        }
+    })
+</script>
+<script src="https://oss.static.nubia.cn/actitem/59196ec5aad4f4.js" tag="user scripts"></script>
+</body>
+</html>
+
+            </div>            </div>        </div>    </div></div><script src="https://static.nubia.cn/product/z11mini/js/jquery.bxslider.js" tag="user scripts"></script><script src="https://static.nubia.cn/product/z11mini/js/jquery.nav.js" tag="user scripts"></script><script tag="user scripts" src="https://oss.static.nubia.cn/actitem/599679d3ad9b062.js"></script><script tag="user scripts">jQuery(function($){
+        $(".sidebar").onePageNav();
+        $(window).on("scroll",function(){
+
+            if($(window).scrollTop()>300){
+                $(".sidebar").css("top","100px")
+            }
+            if($(window).scrollTop()<300){
+                $(".sidebar").removeAttr("style")
+            }
+            if($(window).scrollTop()>5100){
+                $(".sidebar").css("top","4700px")
+            }
+        })
+        $(".bxslider").bxSlider({
+            pagerCustom: "#bx-pager",
+            mode:"fade",
+            autoControls: false
+        });
+
+        $(".online").on("click", function(){
+            window.open("http://livechat1.zte.com.cn/looyu/chat/p.do?c=1&f=60","chat","height=460,width=690,directories=no,location=no,menubar=no,resizeable=no,status=no,toolbar=no,top=100,left=200");
+        })
+    });
+    $(document).ready(function () {
+        $("#nb-h-wrap,.sub-nav").css({"overflow":"hidden"});
+
+        $(window).scroll(function () {
+            if($(".sidebar>li:last-child").hasClass("current")){$(".sidebar").css("display","none")}else
+            {$(".sidebar").css("display","block")}
+            if($(window).scrollTop()>30){$("#nb-h-wrap").css({"height":0,"border":"0"})}else{
+                $("#nb-h-wrap").css({"height":"66px","border-bottom":"1px rgba(0,0,0,.1) solid"})
+            }
+            if($(window).scrollTop()>30){$(".sub-nav").css({"top":0})}else{
+                $(".sub-nav").css({"top":"66px"})
+            }
+        })
+
+    });</script>
+<style>
+    .btn-buy:before{
+        content:'';
+    }
+</style>
+
+<script src="//shop-soa-static.nubia.com/res/footer.js?v=0109"></script>
+
+<script tag="user scripts">
+    $(function(){
+        window.onscroll = function(){
+            var t = document.documentElement.scrollTop || document.body.scrollTop;
+            var sub_nav = document.getElementById("subNav");
+            if (sub_nav) {
+                if( t >= 60 ) {
+                    $("#subNav").css('top', '0px');
+                } else {
+                    $("#subNav").css('top', '60px');
+                }
+            }
+        }
+    })
+</script>
+<script src="https://oss.static.nubia.cn/actitem/59196ec5aad4f4.js" tag="user scripts"></script>
+</body>
+</html>
+
+
+
+

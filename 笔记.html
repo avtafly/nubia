@@ -1,0 +1,506 @@
+
+app.controller('myHeader', function ($scope) {
+
+    $scope.domain = '';
+    $scope.officialDomain = 'https://www.nubia.com';
+    $scope.shopDomain = 'https://shop.nubia.com';
+    $scope.oosdomain = 'https://oss.static.nubia.cn/';
+    $scope.phoneUrl = 'https://www.nubia.com/show/page/block?pageType=8&pagePosition=801';
+    $scope.loginUrl = 'https://www.nubia.com/user/pass/userInfo';
+    $scope.username = '';
+    $scope.phones = eval("(" + "[{\"id\":1043,\"title\":\"Z18mini\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/152343491468.png\",\"small_image\":\"blockimage/152343491442.png\",\"file_path\":\"\",\"link\":\"https://www.nubia.com/nubiaZ18mini\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0,\"block_products\":{\"spec_id\":993,\"original_price\":1799.00,\"price\":1799.00,\"product_link\":\"nubiaz18mini/black6gb64gb\",\"sale_point\":{\"sale_point\":\"left\",\"block_image_icon\":{\"is_need\":true,\"text\":\"新品\",\"color\":\"#e60012\"}}}},{\"id\":1004,\"title\":\"V18 全面屏\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/152152399040.png\",\"small_image\":\"blockimage/152152399030.png\",\"file_path\":\"\",\"link\":\"https://www.nubia.com/nubiav18\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0,\"block_products\":{\"spec_id\":983,\"original_price\":1299.00,\"price\":1299.00,\"product_link\":\"nubiav18/black4gb64gb\",\"sale_point\":{\"sale_point\":\"\",\"block_image_icon\":{\"is_need\":false,\"text\":\"\",\"color\":\"\"}}}},{\"id\":867,\"title\":\"Z17S全面屏\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/150779043916.png\",\"small_image\":\"blockimage/150779044081.png\",\"file_path\":\"\",\"link\":\"https://www.nubia.com/nubiaz17s\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0,\"block_products\":{\"spec_id\":935,\"original_price\":2699.00,\"price\":2499.00,\"product_link\":\"nubiaz17s/black6gb64gb\",\"sale_point\":{\"sale_point\":\"left\",\"block_image_icon\":{\"is_need\":true,\"text\":\"直降200\",\"color\":\"#e60012\"}}}},{\"id\":868,\"title\":\"Z17miniS小牛8\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/150779051631.png\",\"small_image\":\"blockimage/150779051689.png\",\"file_path\":\"\",\"link\":\"https://www.nubia.com/nubiaz17minis\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0,\"block_products\":{\"spec_id\":938,\"original_price\":1499.00,\"price\":1299.00,\"product_link\":\"nubiaz17minis/black6gb64gb\",\"sale_point\":{\"sale_point\":\"left\",\"block_image_icon\":{\"is_need\":true,\"text\":\"直降200\",\"color\":\"#e60012\"}}}},{\"id\":706,\"title\":\"Z17 旗舰版\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/150112378146.png\",\"small_image\":\"blockimage/150112378262.png\",\"file_path\":\"\",\"link\":\"http://www.nubia.com/nubiaz17\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0,\"block_products\":{\"spec_id\":882,\"original_price\":2499.00,\"price\":2299.00,\"product_link\":\"nubiaZ17/black\",\"sale_point\":{\"sale_point\":\"\",\"block_image_icon\":{\"is_need\":false,\"text\":\"\",\"color\":\"\"}}}},{\"id\":996,\"title\":\"N3\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/152116389431.png\",\"small_image\":\"blockimage/152116389452.png\",\"file_path\":\"\",\"link\":\"https://www.nubia.com/nubian3\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0,\"block_products\":{\"spec_id\":981,\"original_price\":1799.00,\"price\":1799.00,\"product_link\":\"nubian3/black4gb64gb\",\"sale_point\":{\"sale_point\":\"\",\"block_image_icon\":{\"is_need\":false,\"text\":\"\",\"color\":\"\"}}}},{\"id\":664,\"title\":\"Z17mini\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/149750591139.png\",\"small_image\":\"blockimage/149750591120.png\",\"file_path\":\"\",\"link\":\"http://www.nubia.com/nubiaz17mini\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0,\"block_products\":{\"spec_id\":854,\"original_price\":1499.00,\"price\":1099.00,\"product_link\":\"nubiaz17mini/whitegold4g\",\"sale_point\":{\"sale_point\":\"left\",\"block_image_icon\":{\"is_need\":true,\"text\":\"直降400\",\"color\":\"#e60012\"}}}},{\"id\":665,\"title\":\"Z11\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/149622411591.png\",\"small_image\":\"blockimage/149622411546.png\",\"file_path\":\"\",\"link\":\"http://www.nubia.com/nubiaz11\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0,\"block_products\":{\"spec_id\":776,\"original_price\":2299.00,\"price\":1999.00,\"product_link\":\"nubiaz11/whitegold\",\"sale_point\":{\"sale_point\":\"\",\"block_image_icon\":{\"is_need\":false,\"text\":\"\",\"color\":\"\"}}}},{\"id\":752,\"title\":\"N2\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/149914648730.png\",\"small_image\":\"blockimage/149914648717.png\",\"file_path\":\"\",\"link\":\"http://shop.nubia.com/nubian2\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0,\"block_products\":{\"spec_id\":827,\"original_price\":1799.00,\"price\":1599.00,\"product_link\":\"nubian2/black64g\",\"sale_point\":{\"sale_point\":\"\",\"block_image_icon\":{\"is_need\":false,\"text\":\"\",\"color\":\"\"}}}},{\"id\":774,\"title\":\"M2 畅玩版\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/150149235598.png\",\"small_image\":\"blockimage/15014923554.png\",\"file_path\":\"\",\"link\":\"http://www.nubia.com/nubiam2_fluency\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0}]" + ")");
+})
+   // ----------mask--------
+   var mobile = $('#mobile')
+
+   var tool = $('#tool')
+   var span1 = $('.span1')
+   var span2 = $('.span2')
+   var mask_mobile = $('showsmobiles-mask')
+   // var mask_tool = $('.showstools-mask')
+   
+   var list = $('.list a')
+   
+   console.log(list)
+   
+   mask = function (type, mask) {
+       span2.click(function () {
+           for (i = 0; i < list.length; i++) {
+               if (i <= 6) {
+                   list.eq(i).hide()
+                   // console.log(list.eq(i))
+               }
+           }
+       })
+       span1.click(function () {
+           for (i = 0; i < list.length; i++) {
+               list.eq(i).show()
+           }
+       })
+       type.hover(
+           // console.log(e)
+           function (e) {
+               mask.show()
+               e.stopPropagation()
+               // console.log(e)
+   
+           }
+       );
+       mask.hover(
+           // console.log(e)
+           function (e) {
+               mask.show()
+               // console.log(e)
+   
+           },
+           function () {
+               mask.hide()
+           }
+       );
+   }
+   
+   mask(mobile, mask_mobile)
+   // mask(tool, mask_tool)
+   
+   
+// var $elem = $('.container');
+
+// var $a = $elem.find('.list'), $a = $elem.find('a'),
+//     moving = false, $width = $a.length * ($a.width() + parseInt($a.css('margin-right'))) - 1,
+//     offset = $elem.find(".list").width(),
+//     num = Math.floor($width / offset),
+//     offset = offset - parseInt($a.css('padding-left')),
+//     distace = -offset * num;
+
+// if ($a.length <= 1) return false;
+// var $right = $elem.find(".span1"),
+//     $left = $elem.find(".span2");
+
+// $right.click(function (e) {
+//     e.preventDefault();
+//     if (moving) return;
+//     moving = true;
+//     var temp = parseInt($a.css("left"));
+
+//     if (temp > distace) {
+//         $a.animate({ left: temp - offset }, "slow", stop_moving);
+//     } else {
+//         $a.animate({ left: temp - 10 }, "fast");
+//         $a.animate({ left: temp }, "fast", stop_moving);
+//     }
+// });
+// $left.click(function (e) {
+//     e.preventDefault();
+//     if (moving) return;
+//     moving = true;
+//     var temp = parseInt($a.css("left"));
+
+//     if (temp < 0) {
+//         $a.animate({ left: temp + offset }, "slow", stop_moving);
+//     } else {
+//         $a.animate({ left: temp + 10 }, "fast");
+//         $a.animate({ left: temp }, "fast", stop_moving);
+//     }
+// });
+// var stop_moving = function () {
+//     moving = false
+// };
+//     mounted= function () {
+//         this.getLogin();
+//         this.getPhones();
+//         //this.getAccesses();
+//     };
+//     updated= function () {
+//         this.productNav("#product");
+//         this.productNav("#acc");
+//     };
+//     methods= {
+//         getLogin: function () {
+//             var vm = this;
+//             $.ajax({
+//                 type: "get",
+//                 dataType: 'json',
+//                 url: vm.loginUrl,
+//                 success: function (res) {
+//                     if (res.code == 0 && res.data.uid > 0) {
+//                         vm.username = res.data.display_name
+//                     }
+//                 },
+//                 error: function (e) {
+//                     console.log(e)
+//                 }
+//             });
+//         },
+//         getPhones: function () {
+//             var vm = this;
+//             vm.phones = headPhoneInfo;
+
+//         },
+//         getAccesses: function () {
+//             var vm = this;
+//             $.ajax({
+//                 type: "get",
+//                 dataType: 'json',
+//                 url: vm.domain + vm.accessUrl,
+//                 success: function (res) {
+//                     var arr = [];
+//                     $.each(res, function (key, val) {
+//                         arr.push(val);
+//                     });
+//                     vm.accesses = arr;
+//                 },
+//                 error: function (e) {
+//                     console.log(e)
+//                 }
+//             });
+//         },
+//         productNav: function (elem) {
+//             var $elem = $(elem);
+
+//             var $a = $elem.find('ul'), $a = $elem.find('li'),
+//                 moving = false, $width = $a.length * ($a.width() + parseInt($a.css('margin-right'))) - 1,
+//                 offset = $elem.find(".container").width(),
+//                 num = Math.floor($width / offset),
+//                 offset = offset - parseInt($a.css('padding-left')),
+//                 distace = -offset * num;
+
+//             if ($a.length <= 1) return false;
+//             var $right = $elem.find(".arrow-right"),
+//                 $left = $elem.find(".arrow-left");
+
+//             $right.click(function (e) {
+//                 e.preventDefault();
+//                 if (moving) return;
+//                 moving = true;
+//                 var temp = parseInt($a.css("left"));
+
+//                 if (temp > distace) {
+//                     $a.animate({ left: temp - offset }, "slow", stop_moving);
+//                 } else {
+//                     $a.animate({ left: temp - 10 }, "fast");
+//                     $a.animate({ left: temp }, "fast", stop_moving);
+//                 }
+//             });
+//             $left.click(function (e) {
+//                 e.preventDefault();
+//                 if (moving) return;
+//                 moving = true;
+//                 var temp = parseInt($a.css("left"));
+
+//                 if (temp < 0) {
+//                     $a.animate({ left: temp + offset }, "slow", stop_moving);
+//                 } else {
+//                     $a.animate({ left: temp + 10 }, "fast");
+//                     $a.animate({ left: temp }, "fast", stop_moving);
+//                 }
+//             });
+//             var stop_moving = function () {
+//                 moving = false
+//             };
+//         }
+//     }
+// })
+
+// $(function () {
+//     $("ul.list-inline>li").find('.list').css({ "display": "block", "height": "0" });
+//     $("ul.list-inline>li").mouseenter(function () {
+//         $(this).find('.list').stop().animate({ height: "240px" }, 300);
+//     }).mouseleave(function () {
+//         $(this).find('.list').stop().animate({ height: "0" }, 300);
+//     });
+
+//     $("#collapse_btn").on('touchstart, click', function (e) {
+//         $(document.documentElement).toggleClass('no-scroll');
+//         $('#navbar-collapse-main li').toggleClass('opacity')
+//     });
+// });
+<html lang="en">
+
+<head>
+<title>【努比亚手机官网】红魔游戏手机-不红魔 不成活</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta property="wb:webmaster" content="6bdcc5762d77ce58" />
+<meta property="qc:admins" content="4267477257665211636" />
+<meta name="baidu-site-verification" content="YjQteHb3gi" />
+<meta name="charset" content="utf-8" />
+<meta name="wb:webmaster" content="6bdcc5762d77ce58" />
+<meta name="keywords" content="努比亚手机, 努比亚Z17S, Z17, Z17mini, M2, M2青春版, Z11 miniS, Z11, Z11 mini, N2, 努比亚手机配件, 随手拍出好照片" />
+<meta name="description" content="努比亚手机官网，囊括了Z17S, Z17, Z17mini, M2, M2青春版, Z11, Z11 miniS等智能手机及其配件，同时提供努比亚客户服务及售后支持。" />
+<meta name="baidu-site-verification" content="f1lAnETopJ" />
+<link rel="shortcut icon" href="//static.nubia.cn/images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="//static.nubia.cn/v2/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" href="//static.nubia.cn/v2/css/nubia-ui.css" />
+<link rel="stylesheet" href="//static.nubia.cn/v2/css/flag.css" />
+<link rel="stylesheet" href="//static.nubia.cn/v2/css/store.css" />
+<link rel="stylesheet" href="//static.nubia.cn/v2/css/typo.css" />
+<link rel="stylesheet" href="//static.nubia.cn/v2/css/carousel-shop.css" />
+<script src="//shop-soa-static.nubia.com/res/ajaxUtils.js"></script>
+</head>
+
+<style>
+.caption-sm-bottom-left,.caption-sm-bottom-middle,.caption-sm-bottom-right{top:auto; bottom:20px; left:10%;}
+.caption-sm-middle-left, .caption-sm-middle,.caption-sm-middle-right {top: 56%; transform: translateY(-50%);}
+.caption-sm-top-middle, .caption-sm-middle, .caption-sm-bottom-middle{left: 50%; transform: translateX(-50%); right: auto;}
+.caption-sm-top-right,.caption-sm-middle-right,.caption-sm-bottom-right{right:10%; left: auto;}
+.caption-sm-top-middle{top: 50px;}
+.caption-sm-middle{top: 56%; left: 50%; transform: translate(-50%, -50%); }
+
+.carousel-inner .text-dark .btn-link-inverse, .carousel-inner .text-dark h3{color: #414143;}
+.carousel-inner .text-dark .btn-link-inverse:hover{color: #e95f46;}
+.carousel-inner .fill{cursor: pointer;}
+.carousel-inner .item a{display: inline; text-decoration: none;}
+.btn-link-inverse:hover, .btn-link-inverse:focus{border: none;}
+
+.carousel-inner .btn{border: none;}
+.carousel-inner .icon-arrow-right3{color: #fff;}
+.carousel-inner .btn-video:hover .icon-arrow-right3{color: #e95f46;}
+
+ul li{list-style: none;}
+#nb-extra-tool ul{padding: 0;}
+</style>
+
+<body>
+<script>
+fetchURL("/page/header");
+</script>
+<div id="index">
+<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" v-for="i in sliders.length" :class="{active:(i-1)==0}" :data-slide-to="i-1"></li>
+    </ol>
+    <!-- Carousel items -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item" v-for="(slider,i) in sliders" :class="{active:i==0}">
+            <div class="fill" :style="{'background-image':'url('+oss_url+slider.big_image+')'}" @click="winShow(slider)"></div>
+            <div v-if="slider.isbtn" :class="'carousel-caption '+btnStyle[slider.title_position]+textStyle[slider.content_bg_color]"  >
+            	<h2 >{{slider.title}}</h2>
+            	<h3 class="text-primary" data-animation="animated fadeInDown">{{slider.sub_title}}</h3>
+            	<template v-for="btn in slider.btn_lists" >
+	            	<a v-if="btn.link_type == 0" v-show="btn.link" :href="btn.link">
+	                    <button v-if="btn.link_style==2" data-animation="animated fadeInDown" class="btn btn-lg btn-buy mvm "><span>{{btn.title}}</span></button>
+	                    <button v-else data-animation="animated fadeInDown" class="btn btn-lg mvm btn-link btn-link-inverse">{{btn.title}}</button>
+	                </a>
+	                <a v-else class="btn-video" v-show="btn.link" :href="btn.link">
+	                    <button data-animation="animated fadeInDown" class="btn btn-lg mvm btn-link btn-link-inverse"><span class="icon-arrow-right3 mrs"></span>{{btn.title}}</button>
+	                </a>
+                </template>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel nav -->
+    <a class="left carousel-control" href="#carousel" data-slide="prev">
+        <span class="icon-arrow-left4"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel" data-slide="next">
+        <span class="icon-arrow-right4"></span>
+    </a>
+</div>
+<div class="bg-base-dark" style="padding-top: 3px;">
+    <div class="featured-items-container clearfix">
+        <ul class="featured-items no-gutter" v-for="featured in featureds">
+            <li class="featured-item col-xs-12 col-sm-4">
+                <a :class="[featured.media_type==1?'':'btn-video']" :href="featured.media_type ==1?featured.link:'#'" @click="recommed(featured)">
+                    <div class="featured-item__image" :style="{'background-image':'url('+oss_url+featured.big_image+')'}"></div>
+                    <div class="featured-item__heading">
+                        <h3 class="">{{featured.title}}</h3>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+<div class="modal fade" id="videoBanner" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-hg modal-inverse">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close icon-times" data-dismiss="modal">
+                <span class="sr-only">Close</span>
+            </button>
+            <h4 class="modal-title" id="ModalLabel">video</h4>
+        </div>
+        <div style="position: relative;">
+            <div class="videocover text-center">&nbsp;
+                <i class="icon-circle_arrow-right3"></i>
+            </div>
+            <video class="video-player" width="100%" preload="auto">
+                <source src="" type="video/mp4"> Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+var BANNER_BTN_POST = {
+    11: 'text-sm-left caption-sm-top-left',
+    12: 'text-sm-center caption-sm-top-middle',
+    13: 'text-sm-right caption-sm-top-right',
+    21: 'text-sm-left caption-sm-middle-left',
+    22: 'text-sm-center caption-sm-middle',
+    23: 'text-sm-right caption-sm-middle-right',
+    31: 'text-sm-left caption-sm-bottom-left',
+    32: 'text-sm-center caption-sm-bottom-middle',
+    33: 'text-sm-right caption-sm-bottom-right',
+    0: 'text-sm-left',
+}
+var BANNER_FONT_STYLE = {
+    '1':" text-dark text-inverse",
+    "2":" ",
+    '0':" ",
+}
+
+new Vue({
+    el: '#index',
+        oss_url: 'https://oss.static.nubia.cn/',
+        apiURL: 'https://www.nubia.com/show/page/block?pageType=1',
+        btnStyle:BANNER_BTN_POST,
+        textStyle:BANNER_FONT_STYLE,
+        sliders: [],
+        featureds: []
+    },
+    mounted: function () {
+        this.getPage();
+    },
+    methods: {
+        getPage: function () {
+            var vm = this;
+            $.ajax({
+                url: vm.apiURL,
+                success: function (res) {
+                    var datas = res.data[101]||[];
+                    $.each(datas, function(i, item) {
+                    	item.isbtn = item.btn_lists.some(function(item){
+                    		return item.link != '';
+                    	})
+                		vm.sliders[i] = item;
+                    });
+                    vm.featureds = res.data[102]||[];
+                }
+            });
+        },
+        winShow: function (slider) {
+        	if(!slider.isbtn){
+        		specialnubiabee('trackStructEvent','portal_index_banner','count',1,{});
+        		window.location.href = slider.link;
+        	}
+        },
+        recommed: function(featured){
+        	specialnubiabee('trackStructEvent','portal_index_recommend','count',1,{})
+        	if(featured.media_type != 1){
+        		event.preventDefault();
+        		var href = featured.file_path,
+		            title = featured.title,
+		            $modal = $('#videoBanner');
+		
+		        $modal.find('video').attr('src', href);
+		        $('#ModalLabel').text(title);
+		        $modal.modal();
+        	}
+        }
+    }
+});
+$(function () {
+    $("#carousel").carousel({
+        interval: 9000,
+        pause: false
+    });
+	
+    $(".videocover").click(function () {
+        var $this = $(this),
+            $video = $(this).next();
+
+        $video.get(0).play();
+        $video.get(0).controls = true;
+        $video.on("play", function () {
+            $this.hide();
+        }).on("pause", function () {
+            $this.show();
+        });
+    });
+    $(".video-player").on("click", function () {
+        $(this).get(0).pause();
+    }).bind("pause ended", function () {
+        var $playBtn = $(this).prev();
+        $playBtn.show();
+    });
+    $(".close").on("click", function () {
+        $(".video-player").get(0).pause();
+    });
+});
+</script>
+<script src="//shop-soa-static.nubia.com/res/footer.js?v=0109"></script>
+
+</body>
+</html>
+
+
+
+!DOCTYPE html>
+<html ng-app="myApp" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS carousel</title>
+    <link href="http://libs.baidu.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-indicators li{
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+<div ng-controller="CarouselDemoCtrl" style="margin-top: 15px;">
+    <div style="height: 305px">
+        <carousel interval="myInterval" no-wrap="noWrapSlides">
+            <slide ng-repeat="slide in slides" active="slide.active">
+                <img ng-src="{{slide.image}}" style="margin:auto;width:1000px;height: 600px;"/>
+                <div class="carousel-caption">
+                    <p>{{slide.text}}</p>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+</div>
+ 
+<script src="http://apps.bdimg.com/libs/angular.js/1.3.13/angular.min.js"></script>
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.0-beta.4/angular-animate.min.js"></script>
+<script src="http://cdn.bootcss.com/angular-ui-bootstrap/0.13.3/ui-bootstrap.min.js"></script>
+<script src="http://cdn.bootcss.com/angular-ui-bootstrap/0.13.3/ui-bootstrap-tpls.min.js"></script>
+<script>
+    angular.module('myApp', ['ui.bootstrap', 'ngAnimate']).controller('CarouselDemoCtrl', function ($scope) {
+        $scope.myInterval = 5000;
+        $scope.noWrapSlides = false;
+        var slides = $scope.slides = [];
+        $scope.addSlide = function () {
+            var newWidth = 600 + slides.length + 1;
+            slides.push({
+                image: '../img/1.jpg',
+                text: '1',
+            });
+            slides.push({
+                image: '../img/2.jpg',
+                text: '2',
+            });
+            slides.push({
+                image: '../img/3.jpg',
+                text: '3',
+            });
+            slides.push({
+                image: '../img/4.jpg',
+                text: '4',
+            });
+            slides.push({
+                image: '../img/5.jpg',
+                text: '5',
+            });
+            slides.push({
+                image: '../img/6.jpg',
+                text: '6',
+            });
+        };
+        $scope.addSlide();
+    });
+</script>
+</body>

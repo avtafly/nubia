@@ -1,0 +1,118 @@
+/* <!-- footer --> */
+.nubia-footer{
+    /* background:yellow; */
+    height: 410px;
+    width: 1425px;
+    z-index: 100000;
+}
+.nubia-footer .container_footer{
+    background:#efeeeb;
+    height: 410px;
+    width: 1425px
+}
+.nubia-footer .container_footer #footer-menu{
+    width:1225px;
+    height: 410px;
+    margin: 0 auto;
+}
+.nubia-footer .container_footer #footer-menu .col-sm-2{
+    float:left;
+    width:150px;
+    margin-left: 50px;
+    margin-top:70px;
+    height: 240px;
+}
+.nubia-footer .container_footer #footer-menu .col-sm-2 h4{
+    text-decoration: none;
+    color:#606463;
+}
+.nubia-footer .container_footer #footer-menu .col-sm-2 li{
+    list-style: none;
+}
+.nubia-footer .container_footer #footer-menu .col-sm-2 li a{
+    text-decoration: none;
+    color:#606463;
+    font-size: 12px;
+
+}
+.master-footer {
+    text-align: center;
+    color: #555;
+    font-size: 11px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    /* background: red; */
+}
+.master-footer>a{
+    color: #888;
+}
+@media (max-width: 767px) {
+    .master-footer {
+        padding-top: 17px;
+        padding-bottom: 25px;
+    }
+}
+.master-footer .nubia-foot-nav {
+padding-top: 10px;
+}
+.master-footer .nubia-foot-nav small{
+    line-height: 30px;
+    
+}
+.master-footer .nubia-foot-nav small a{
+    text-decoration: none;
+    color: #888;
+    display: inline-table;
+    vertical-align: top;
+    
+}
+.master-footer .nubia-foot-nav>a {
+color: #e95f46;
+margin-right: 5px;
+}
+.master-footer .nubia-foot-nav>a:hover {
+color: #cf2b00;
+}
+.master-footer a.text-facebook:hover {
+color: #3c5a96;
+}
+.master-footer a.text-twitter:hover {
+color: #1ea0f0;
+}
+.master-footer a.text-google:hover {
+color: #e62117;
+}
+.master-footer a.text-instagram:hover {
+color: #dc318b;
+}
+.master-footer a.text-vk:hover {
+color: #5280b3;
+}
+.master-footer a.text-wechat:hover {
+color: #2ec000;
+}
+.master-footer a.text-weibo:hover {
+color: #e5162c;
+}
+/* 固定工具 */
+
+#nb-extra-tool{
+    position: fixed;
+    z-index: 999;
+    right: 40px;
+    bottom: 70px;
+    width: 70px;
+    position: relative;
+    
+}
+#nb-extra-tool ul li{
+    width: 100%;
+    margin-top: 10px;
+    list-style: none;
+}
+#nb-extra-tool ul li img{
+    width: 100%;
+    position: absolute;
+    margin-top: 10px;
+
+}

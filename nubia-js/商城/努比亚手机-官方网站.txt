@@ -1,0 +1,374 @@
+<html lang="en">
+<head>
+    <title>努比亚手机-官方网站</title>
+    <meta name="keywords" content="nubia,努比亚,努比亚手机,努比亚官网,努比亚红魔,红魔手机,红魔,努比亚Z18mini,努比亚Z17S,努比亚Z17,Z17,努比亚V18" />
+    <meta name="description" content="努比亚,新锐高端智能手机品牌,以专业摄影,极致游戏体验,无边框等为特色,代表产品有红魔游戏手机,Z18mini,Z17S等,品质保证." />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta property="wb:webmaster" content="6bdcc5762d77ce58" />
+    <meta property="qc:admins" content="4267477257665211636" />
+    <meta name="baidu-site-verification" content="YjQteHb3gi" />
+    <meta name="charset" content="utf-8" />
+    <meta name="wb:webmaster" content="6bdcc5762d77ce58" />
+    <link rel="shortcut icon" href="//static.nubia.cn/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="//static.nubia.cn/v2/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="//static.nubia.cn/v2/css/nubia-ui.css" />
+    <link rel="stylesheet" href="//static.nubia.cn/v2/css/flag.css" />
+    <link rel="stylesheet" href="//static.nubia.cn/v2/css/store.css" />
+    <link rel="stylesheet" href="//static.nubia.cn/v2/css/typo.css" />
+    <link rel="stylesheet" href="//static.nubia.cn/v2/css/carousel-shop.css" />
+    <link rel="stylesheet" href="//static.nubia.cn/shop/tmp/base.css" />
+    <link rel="stylesheet" href="//static.nubia.cn/shop/css/jquery.bxslider.css" />
+    <link rel="stylesheet" href="//static.nubia.cn/shop/css/nubia.b2c.css?v=1009" />
+    <link rel="stylesheet" href="//static.nubia.cn/shop/css/shop.css" />
+    <link rel="stylesheet" href="//static.nubia.cn/js_new/skin/layer.css" />
+    <script src="//shop-soa-static.nubia.com/res/ajaxUtils.js"></script>
+</head>
+<link rel="stylesheet" href="https://oss.static.nubia.cn/actitem/59505ac996a056.css" />
+<style>
+    .price-cancel {
+        display: inline-block;color: #bbb;text-decoration: line-through;
+    }
+    .product .list ul li a i.img-circle {margin: 20px 0 !important;}
+    .wrap{height: auto !important;}
+    .icon-circle_ser:before {
+        content: "\e901";
+    }
+    .icon-circle-server:before {
+        content: "\e903";
+    }
+    .icon-circle_cog{content: "\e90d";}
+    .icon-circle_report{content: "\e9ef";}
+    .icon-circle_15-c:before {
+        content: "\e900";
+    }
+    .icon-circle-more:before {
+        content: "\e927";
+    }
+    .btn-sell{background: #f35c49 !important;color:#fff !important;}
+    .btn-sell:hover{background: #ec402a !important; color:#fff !important;}
+    .bx-wrapper img{max-width: 100000000%;}
+    .nb-video-layer{background: rgba(0,0,0,.7);}
+    .nb-mlside-menu>a>div.figure{width: 60px !important;height:60px !important;margin-top: 15px !important;}
+    .nb-mlside-menu>a>div.figure>img{width: 100% !important;}
+    .nb-mlside-menu>a>p{margin-left: 80px !important;}
+    .price_old{color:#aaa !important;text-decoration:line-through;position: relative;top:-2px;border-left:1px solid #aaa;padding-left: 5px;height: 14px;line-height: 14px;}
+    .main-nav a i.mhm{margin-top: 5px;}
+    .ads-banner>a>img{width: 100%;}
+    .nbc-pro-cont .price span{    margin-right: 5px;}
+    .bxslider>li>a>img{max-width: 1920px;}
+    .main-header .container{min-width: 1200px !important;}
+</style>
+<body>
+<script>
+    fetchURL("/page/header");
+</script>
+<!--<script src="http://static.nubia.cn/v2/js/jquery-1.8.3.min.js"></script>
+<script src="https://static.nubia.cn/v2/js/bootstrap.min.js"></script>
+<script src="http://shop-soa-static.server.nubia.cn/res/vue.min.js"></script>-->
+
+<div class="nb-mobile-contain nb-banner-contain">
+    <div class="bx-wrapper">
+        <div class="bx-viewport">
+            <ul class="bxslider" id="sliderBlock">
+            </ul>
+        </div>
+    </div>
+    <div class="cl nb-ml-h-nav-box" id="leftmenu">
+    </div>
+</div>
+
+
+<div id="nb-mall-wrap">
+    <div class="nb-mobile-contain">
+
+        <div class="cl nb-ml-newrelease">
+            <div class="nb-channel-item i-left">
+                <ul class="">
+                    <li class="bgc">
+                        <a href="https://shop.nubia.com/recycle.php" onclick="specialnubiabee('trackStructEvent','shop_index_shortcut','count',1,{})"><i class="icon-circle_refresh"></i> <span>以旧换新</span></a>
+                    </li>
+                    <li>
+                        <a href="/nbcode.php" onclick="specialnubiabee('trackStructEvent','shop_index_shortcut','count',1,{})"><i class="icon-circle_cloud-up"></i> <span>NB码通道</span></a>
+                    </li>
+                    <li>
+                        <a href="/warranty.php?a=screenshow" onclick="specialnubiabee('trackStructEvent','shop_index_shortcut','count',1,{})"><i class="icon-circle_shield"></i> <span>屏碎宝</span></a>
+                    </li>
+                    <li>
+                        <a href="http://www.nubia.com/active/762460b1da61e90.html" onclick="specialnubiabee('trackStructEvent','shop_index_shortcut','count',1,{})"><i class="icon-circle_ser"></i> <span>真伪查询</span></a>
+                    </li>
+                    <li>
+                        <a href="/service.php?sid=3"><i class="icon-circle-server" onclick="specialnubiabee('trackStructEvent','shop_index_shortcut','count',1,{})"></i> <span>售后网点</span></a>
+                    </li>
+                    <li>
+                        <a href="http://ui.nubia.cn/rom" onclick="specialnubiabee('trackStructEvent','shop_index_shortcut','count',1,{})"><i class="icon-circle_arrow-down"></i> <span>软件下载</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div  id="bookBlock" >
+            </div>
+        </div>
+
+        <div class="nb-mall-list">
+
+            <dl id="hot_mall" class="cl nb-mall-m-hot">
+                <dt class="title">
+                <h2>热门产品</h2>
+                <a href="/phone">查看更多 <i class="icon-circle-more"></i></a>
+                </dt>
+                <dd class="nbc-new1-box">
+                    <ul class="cl" id="hotBlock">
+                    </ul>
+                </dd>
+            </dl>
+
+            <dl class="cl nb-mall-m-hot">
+                <dt class="title">
+                <h2>精品手机</h2>
+                <a href="/phone">查看更多 <i class="icon-circle-more"></i></a>
+                </dt>
+                <dd style="margin-bottom:3px;" class="ads-banner" id="bestPhoneBanner">
+
+                </dd>
+                <dd class="nbc-new1-box">
+                    <ul class="cl" id="bestBlock">
+                    </ul>
+                </dd>
+            </dl>
+
+            <dl class="cl nb-mall-m-hot">
+                <dt class="title">
+                <h2>精选配件</h2>
+                <a href="/accessory">查看更多<i class="icon-circle-more"></i></a>
+                </dt>
+                <dd class="nbc-new1-box">
+                    <ul class="cl" id="accessoryBlock">
+                        <li  style="margin-bottom:13px" class="goods-hover-shows col2" id="accessoryBannerBlock">
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<div id="nb-mall-common">
+    <div class="nb-mobile-contain">
+        <div class="nb-mall-list">
+            <dl class="cl nb-mall-m-rel">
+                <dt class="title">
+                <h2>产品热评</h2>
+                <a href="/viewnews.php" target="_blank">查看更多 <i class="icon-circle-more"></i></a>
+                </dt>
+                <dd class="nbc-new1-box">
+                    <ul class="cl" id="hotCommentBlock">
+                    </ul>
+                </dd>
+            </dl>
+
+            <dl class="cl nb-mall-m-rel">
+                <dt class="title">
+                <h2>视频</h2>
+                <a href="/video.php" target="_blank">查看更多 <i class="icon-circle-more"></i></a>
+                </dt>
+                <dd class="nbc-new1-box">
+                    <ul class="cl" id="vedioBlock">
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="cl nb-mall-m-rel">
+                <dt class="title">
+                <h2>服务</h2>
+                <a href="/service.php" target="_blank">查看更多 <i class="icon-circle-more"></i></a>
+                </dt>
+                <dd class="nbc-new1-box">
+                    <ul class="cl">
+                        <li target="_blank" class="goods-hover-shows phone-server href1">
+                            <div class="figure-info">
+                                <i class="icon-circle_report"></i>
+                                <div class="info-text">
+                                    <a href="http://www.nubia.com/active/postsalesservice.html" onclick="specialnubiabee('trackStructEvent','shop_index_service','count',1,{})" target="_blank">
+                                        <h2>售后政策</h2>
+                                        <p>了解nubia努比亚的服务和保修等相关政策。</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li target="_blank" class="goods-hover-shows phone-server href2">
+                            <div class="figure-info">
+                                <i class="icon-circle_cog"></i>
+                                <div class="info-text">
+                                    <a href="http://www.nubia.com/active/c10bc50255fb76f.html" onclick="specialnubiabee('trackStructEvent','shop_index_service','count',1,{})" target="_blank">
+                                        <h2>特色服务</h2>
+                                        <p class="ellapse-m">
+                                            我们为您准备了一系列与众不同的服务内容，从意外宝到上门服务，通过电话及服务网点获取支持或安排维修。
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="goods-hover-shows phone-server-list" style="height:117px;">
+                            <div class="server-list-item">
+                                <a href="/service.php?sid=81&tabpage=3" onclick="specialnubiabee('trackStructEvent','shop_index_service','count',1,{})" target="_blank">
+                                    <i class="icon-circle_7-c"></i>
+                                    <span>7天无理由退货</span>
+                                </a>
+                            </div>
+                            <div class="server-list-item">
+                                <a href="/service.php?sid=81&tabpage=2" onclick="specialnubiabee('trackStructEvent','shop_index_service','count',1,{})" target="_blank">
+                                    <i class="icon-circle_15-c"></i>
+                                    <span>15天免费上门换货</span>
+                                </a>
+                            </div>
+                            <div class="server-list-item">
+                                <a href="/service.php?sid=82&tabpage=3" onclick="specialnubiabee('trackStructEvent','shop_index_service','count',1,{})" target="_blank">
+                                    <i class="icon-circle_sf"></i>
+                                    <span>全场59元免运费</span>
+                                </a>
+                            </div>
+                            <div class="server-list-item">
+                                <a href="/store.php" target="_blank">
+                                    <i class="icon-circle_localization"></i>
+                                    <span>查找线下商店</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<script src="//oss.static.nubia.cn/actitem/5950d31a23c9349.js" ></script>
+<script src="//static.nubia.cn/shop/script/jquery.bxslider.min.js"></script>
+<script src="//oss.static.nubia.cn/actitem/5950cedaad9af76.js" ></script>
+<script src="//shop-soa-static.nubia.com/res/shop.js?v=0109"></script>
+
+<script type="text/javascript" >
+
+    var NUBIA_STORE_COMMON={
+
+        init : function(){
+            this.goodsHover();
+            this.pro_cata();
+        },
+        pro_cata : function(){
+            var _nb_m_cata=$('.nb-mobile-contain .nb-ml-h-nav-box'),
+                    _nb_mc_item=_nb_m_cata.find('.nb-ml-side li');
+
+            _nb_mc_item.on({
+                mouseenter: function () {
+                    var $this=$(this);
+                    var left_cl=240;
+                    var top_cl;
+                    $(this).children('a').addClass('current').parent().siblings().children('a').removeClass('current');
+                    $(this).find('.nb-mlside-menu').css({display: 'block'}).parent().siblings().find('.nb-mlside-menu').css({display: 'none'});
+                    var cl_num=$(this).find(".nb-mlside-menu a.cl");
+                    if(cl_num.length>6){
+                        $this.find('.nb-mlside-menu').css("width","480px");
+                        if(cl_num.length>12){
+                            $this.find('.nb-mlside-menu').css("width","720px");
+                            if(cl_num.length>18){
+                                $this.find('.nb-mlside-menu').css("width","960px");
+                                if(cl_num.length>24){
+                                    $this.find('.nb-mlside-menu').css("width","1200px");
+                                }
+                            }
+                        }
+                        for(var i=6;i<=cl_num.length;i++){
+                            top_cl=i-6;
+                            if(i>=12){left_cl=480;top_cl=i-12;if(i>=18){left_cl=720;top_cl=i-18;if(i>=24){left_cl=960;top_cl=i-24}}}
+                            $this.find('.nb-mlside-menu>a').eq(i).css({
+                                "position":"absolute",
+                                "left":left_cl+"px",
+                                "top":top_cl*89+"px"
+                            });
+                        }
+                    }
+
+
+                },
+                mouseleave : function(){
+                    $(this).children('a').removeClass('current');
+                    $(this).find('.nb-mlside-menu').css({display:'none'});
+                }
+            });
+
+
+        },
+        goodsHover : function(){
+            var goodsBox=$('li.goods-hover-shows'),
+                    $price = goodsBox.find('.price'),
+                    $btn = goodsBox.find('.nbc-pro-btn');
+            goodsBox.each(function(i,j){
+                var $goods  = $(j),
+                        $btn    = $goods.find('div.nbc-pro-btn'),
+                        $price  = $goods.find('div.price'),
+                        pfigure = $goods.find('div.nbc-pro-cont');
+
+                $goods.hover(function(){
+                    $btn.toggle()
+                    $price.toggle()
+                });
+            });
+        },
+    };
+    NUBIA_STORE_COMMON.init();
+
+    jQuery("#collapse_btn").on('touchstart, click', function(e) {
+        jQuery(document.documentElement).toggleClass('no-scroll');
+        jQuery('#navbar-collapse-main li').toggleClass('opacity')
+    });
+
+    $(function () {
+        function change(){
+            var w=$(window).width(), 
+            	$imgs = $(".bxslider>li>a>img");
+            $.each($imgs, function(i, img) {
+            	var src = $(img).attr('src');
+            	var x2src = $(img).attr('data-x2');
+            	if(w>1920){
+            		$(img).attr('src', x2src);
+            	}else{
+            		$(img).attr('src', src);
+            	}
+            });
+            $(".bxslider>li>a>img").css("left",-(1920-w)/2);
+        }
+        change();
+        $(window).resize(change);
+    });
+    $(function(){
+
+        $(".nb-ml-nr-item>div>a>img").mouseenter(function(){
+            $(this).parent("a").siblings().css({"padding-top":"0px"});
+
+        })
+        $(".nb-ml-nr-item>div>a>img").mouseleave(function(){
+            $(this).parent("a").siblings().css({"padding-top":"4px"});
+        });
+
+        $(".href1").click(function () {
+            window.open("http://www.nubia.com/active/postsalesservice.html")
+        })
+        $(".href2").click(function () {
+            window.open("http://www.nubia.com/active/c10bc50255fb76f.html")
+        });
+
+    });
+    $(document).ready(function(){
+        NUBIA_STORE_COMMON.pro_cata();
+
+    });
+    $(".nb-channel-item>ul>li").hover(function () {
+        $(this).addClass("bgc").siblings("li").removeClass("bgc");
+    })
+    setInterval(function () {
+        $(".bx-wrapper .bx-next ").click()
+    },5000)
+</script>
+
+<script src="//shop-soa-static.nubia.com/res/footer.js?v=0109"></script>
+
+</body>
+</html>

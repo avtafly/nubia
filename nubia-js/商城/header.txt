@@ -1,0 +1,346 @@
+
+<style>
+[v-cloak]{display: none;}
+.main-header .main-nav> ul> li.cart{height: 66px;}
+.main-header i.icon-2x{font-size: 20px;}
+.main-header .member{display: none;}
+</style>
+<script src="//shop-soa-static.nubia.com/res/statistics.js"></script>
+<header id="header"  class="store2016" v-cloak>
+    <div class="main-header">
+
+        <div class="container">
+            <div class=" row ">
+                <button id="collapse_btn" type="button" data-toggle="collapse" data-target="#navbar-collapse-main" class="col-xs-2 collapse-toggle collapsed">
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a class="col-xs-8 col-sm-2 text-xs-center text-sm-left" :href="officialDomain">
+                    <img alt="Nubia" src="https://oss.nubia.com/resources/images/nubia-logo-inverse-x2-cn.png" height="50px" style="margin-top: 6px;">
+                </a>
+                <div id="navbar-collapse-main" class="main-nav collapse">
+                    <ul class="list-inline">
+                        <li>
+                            <a class="" :href="shopDomain">商城</a>
+                        </li>
+                        <li class="product" id="product">
+                            <a class="" href="javascript:void(0)">手机</a>
+                            <div class="list" style="">
+                                <div class="container">
+                                    <a href="#" class="page-arrow arrow-left hidden-xs"><i class="icon-arrow-left4"></i></a>
+                                    <ul class="">
+                                              <li v-for="phone in phones">
+                                            <a :href="phone.link">
+                                                <img :src="oosdomain + phone.small_image" :data-x2="oosdomain + phone.big_image" :alt="phone.title">
+                                                <span>{{phone.title}}</span>
+                                            </a>
+                                        </li>
+                                                                                <li>
+                                            <a :href="shopDomain+'/phone'">
+                                                <i class="icon-plus pam img-circle text-light hidden-xs" style="background: #282828;"></i>
+                                                <span>查看所有<br />手机</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="page-arrow arrow-right hidden-xs"><i class="icon-arrow-right4"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product" id="">
+                            <a class="" href="https://www.nubia.com/nubiaredmagic">红魔手机</a>
+                        </li>
+                        <li class="product" id="acc">
+                            <a class="" href="javascript:void(0)">配件</a>
+                            <div class="list" style="">
+                                <div class="container">
+                                    <a href="#" class="page-arrow arrow-left hidden-xs"><i class="icon-arrow-left4"></i></a>
+                                    <ul class="">
+                                                                                    <li>
+                                                <a :href="shopDomain +'/accessory?cateId=31#filter-con'">
+                                                    <i class="icon-case"></i>
+                                                    <span>保护壳</span>
+                                                </a>
+                                            </li>
+                                                                                    <li>
+                                                <a :href="shopDomain +'/accessory?cateId=30#filter-con'">
+                                                    <i class="icon-leather-case"></i>
+                                                    <span>皮套</span>
+                                                </a>
+                                            </li>
+                                                                                    <li>
+                                                <a :href="shopDomain +'/accessory?cateId=29#filter-con'">
+                                                    <i class="icon-screen-protect"></i>
+                                                    <span>贴膜</span>
+                                                </a>
+                                            </li>
+                                                                                    <li>
+                                                <a :href="shopDomain +'/accessory?cateId=22#filter-con'">
+                                                    <i class="icon-earphones"></i>
+                                                    <span>耳机</span>
+                                                </a>
+                                            </li>
+                                                                                    <li>
+                                                <a :href="shopDomain +'/accessory?cateId=28#filter-con'">
+                                                    <i class="icon-cable"></i>
+                                                    <span>数据线/充电器</span>
+                                                </a>
+                                            </li>
+                                                                                    <li>
+                                                <a :href="shopDomain +'/accessory?cateId=27#filter-con'">
+                                                    <i class="icon-peripheral"></i>
+                                                    <span>周边产品</span>
+                                                </a>
+                                            </li>
+                                                                                <li>
+                                            <a :href="shopDomain +'/accessory'">
+                                                <i class="icon-plus icon-sm pam img-circle text-light hidden-xs" style="background: #282828;"></i>
+                                                <span>查看所有<br />配件</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="#fakelink" class="page-arrow arrow-right hidden-xs"><i class="icon-arrow-right4"></i></a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="product" id="pic">
+                            <a href="javascript:void(0)">摄影</a>
+                            <div class="list" style="">
+                                <div class="container">
+                                    <ul class="">
+                                        <li><a :href="officialDomain +'/neovision.php'"><img src="//static.nubia.cn/v2/images/NeoVision-logo.png" alt="" class="hidden-xs" style=" height: 20px; margin: 40px 0 40px;"><span>努比亚摄影引擎</span></a></li>
+                                        <li><a :href="officialDomain +'/gallery.php'"><i class="icon-gallery hidden-xs"></i><span>摄影长廊</span></a></li>
+                                        <li><a :href="officialDomain +'timelapse.php'"><i class="icon-fill_timelapse hidden-xs"></i><span>延时摄影</span></a></li>
+                                        <li><a target="_blank" :href="officialDomain +'/active/starry_sky.html'"><i class="icon-starphone hidden-xs"></i><span>星空之约</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="" :href="officialDomain +'/service.php'">服务</a>
+                        </li>
+                        <li>
+                            <a class="" :href="officialDomain +'/store.php'">体验店</a>
+                        </li>
+                        <li>
+                            <a class="" href="http://bbs.nubia.cn/">社区</a>
+                        </li>
+                        <li class="product" id="ui">
+                            <a class="" href="javascript:void(0)">nubia UI</a>
+                            <div class="list" style="">
+                                <div class="container">
+                                    <ul class="">
+                                        <li>
+                                            <a href="http://ui.nubia.cn/"><img src="//static.nubia.cn/v2/images/nubiaui-logo.png" alt="" class="hidden-xs" style=" height: 75px; margin: 15px 0 10px;">
+                                                <span>nubia UI 5.0</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://ui.nubia.cn/rom">
+                                                <i class="icon-circle_arrow-down5 hidden-xs"></i>
+                                                <span>ROM下载</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bbs.ui.nubia.cn/forum.php">
+                                                <i class="icon-message hidden-xs"></i>
+                                                <span>UI社区</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://yun.nubia.com">
+                                                <i class="icon-cloud-transfer hidden-xs"></i>
+                                                <span>云服务</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://ui.nubia.cn/app/lists">
+                                                <i class="icon-tools hidden-xs"></i>
+                                                <span>应用</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                                                <li class="dropdown dropdown-medium text-left pull-right cart hidden-xs">
+                            <a :href="shopDomain +'/cart.html'" class="text-inverse">
+                                购物车<i class="icon-caddie icon-2x"></i>
+                            </a>
+                        </li>
+                        <!--不登陆则展示头像点击进入登录-->
+                                                <!--判断是否登录，登录则展示-->
+									<li  v-if="username&&username!=0" :style="{display:username?'block':'none'}"  class="dropdown dropdown-medium text-left pull-right member" id="memberLogin" >
+                                <sapn id="memberLoginTitle" class="dropdown-toggle text-inverse" data-toggle="dropdown" 
+                                	:title="username" style="cursor: pointer;">
+                                    &nbsp;<i class="mhm icon-user icon-2x" style="color: #f25c4a;"></i>
+                                </sapn>
+                                <span class="dropdown-arrow dropdown-arrow-inverse" style="right: 20px;"></span>
+                               <ul class="dropdown-menu dropdown-inverse">
+                                    <li class="c-holder">
+                                       <ul class="nav">
+                                            <li role="presentation"><a :href="shopDomain +'/cart.html'"><i class="icon-caddie mhm"></i>我的购物车</a></li>
+                                            <li role="presentation"><a :href="officialDomain +'/member.php'"><i class="icon-home mhm"></i>个人中心</a></li>
+                                            <li class="divider"></li>
+                                            <li role="presentation"><a :href="officialDomain +'/memberorder.php?a=orderList'"><i class="icon-gift mhm"></i>我的订单</a></li>
+                                           <li class="divider"></li>
+                                           <li role="presentation"><a :href="officialDomain +'/memberbonus.php'"><i class="icon-card mhm"></i>我的优惠券</a></li>
+                                           <li class="divider"></li>
+                                           <li role="presentation"><a :href="officialDomain +'/memberfavorite.php'"><i class="icon-fill_star mhm"></i>我的收藏</a></li>
+                                           <li class="divider"></li>
+                                           <li role="presentation"><a :href="officialDomain +'/memberbook.php'"><i class="icon-clock mhm"></i>我的预约</a></li>
+                                           <li class="divider"></li>
+                                           <li role="presentation"><a :href="officialDomain +'/memberaddress.php'"><i class="icon-mail mhm"></i>收货地址</a></li>
+                                            <li class="divider"></li>
+
+                                           <li role="presentation">
+                                               <a :href="officialDomain +'/profile.php?a=logout&url='"> <i class="icon-user-o mhm"></i>注销 {{username}} </a>
+                                           </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+						<!--不登陆则展示头像点击进入登录-->
+                        <li v-else  class="dropdown dropdown-medium text-left pull-right hidden-xs member" id="memberUnLogin" style="display:block">
+                            <a :href="officialDomain +'/member.php'" class="text-inverse" data-toggle="">
+                                &nbsp;<i class="mhm icon-user-o icon-2x"></i>
+                            </a>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<script src="//static.nubia.cn/v2/js/jquery-1.8.3.min.js"></script>
+<script src="//static.nubia.cn/v2/js/bootstrap.min.js"></script>
+<script src="//shop-soa-static.nubia.com/res/vue.min.js"></script>
+<script>
+    var officialDomain = "//www.nubia.com";
+    var shopDomain = "//shop.nubia.com";
+    var headPhoneInfo =  eval("(" +"[{\"id\":1043,\"title\":\"Z18mini\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/152343491468.png\",\"small_image\":\"blockimage/152343491442.png\",\"file_path\":\"\",\"link\":\"https://www.nubia.com/nubiaZ18mini\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0,\"block_products\":{\"spec_id\":993,\"original_price\":1799.00,\"price\":1799.00,\"product_link\":\"nubiaz18mini/black6gb64gb\",\"sale_point\":{\"sale_point\":\"left\",\"block_image_icon\":{\"is_need\":true,\"text\":\"新品\",\"color\":\"#e60012\"}}}},{\"id\":1004,\"title\":\"V18 全面屏\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/152152399040.png\",\"small_image\":\"blockimage/152152399030.png\",\"file_path\":\"\",\"link\":\"https://www.nubia.com/nubiav18\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0,\"block_products\":{\"spec_id\":983,\"original_price\":1299.00,\"price\":1299.00,\"product_link\":\"nubiav18/black4gb64gb\",\"sale_point\":{\"sale_point\":\"\",\"block_image_icon\":{\"is_need\":false,\"text\":\"\",\"color\":\"\"}}}},{\"id\":867,\"title\":\"Z17S全面屏\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/150779043916.png\",\"small_image\":\"blockimage/150779044081.png\",\"file_path\":\"\",\"link\":\"https://www.nubia.com/nubiaz17s\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0,\"block_products\":{\"spec_id\":935,\"original_price\":2699.00,\"price\":2499.00,\"product_link\":\"nubiaz17s/black6gb64gb\",\"sale_point\":{\"sale_point\":\"\",\"block_image_icon\":{\"is_need\":false,\"text\":\"\",\"color\":\"\"}}}},{\"id\":868,\"title\":\"Z17miniS小牛8\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/150779051631.png\",\"small_image\":\"blockimage/150779051689.png\",\"file_path\":\"\",\"link\":\"https://www.nubia.com/nubiaz17minis\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0,\"block_products\":{\"spec_id\":938,\"original_price\":1499.00,\"price\":1299.00,\"product_link\":\"nubiaz17minis/black6gb64gb\",\"sale_point\":{\"sale_point\":\"left\",\"block_image_icon\":{\"is_need\":true,\"text\":\"直降200\",\"color\":\"#e60012\"}}}},{\"id\":706,\"title\":\"Z17 旗舰版\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/150112378146.png\",\"small_image\":\"blockimage/150112378262.png\",\"file_path\":\"\",\"link\":\"http://www.nubia.com/nubiaz17\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0,\"block_products\":{\"spec_id\":882,\"original_price\":2499.00,\"price\":2299.00,\"product_link\":\"nubiaZ17/black\",\"sale_point\":{\"sale_point\":\"\",\"block_image_icon\":{\"is_need\":false,\"text\":\"\",\"color\":\"\"}}}},{\"id\":996,\"title\":\"N3\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/152116389431.png\",\"small_image\":\"blockimage/152116389452.png\",\"file_path\":\"\",\"link\":\"https://www.nubia.com/nubian3\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0,\"block_products\":{\"spec_id\":981,\"original_price\":1799.00,\"price\":1599.00,\"product_link\":\"nubian3/black4gb64gb\",\"sale_point\":{\"sale_point\":\"\",\"block_image_icon\":{\"is_need\":false,\"text\":\"\",\"color\":\"\"}}}},{\"id\":664,\"title\":\"Z17mini\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/149750591139.png\",\"small_image\":\"blockimage/149750591120.png\",\"file_path\":\"\",\"link\":\"http://www.nubia.com/nubiaz17mini\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0,\"block_products\":{\"spec_id\":854,\"original_price\":1499.00,\"price\":1099.00,\"product_link\":\"nubiaz17mini/whitegold4g\",\"sale_point\":{\"sale_point\":\"left\",\"block_image_icon\":{\"is_need\":true,\"text\":\"直降400\",\"color\":\"#e60012\"}}}},{\"id\":665,\"title\":\"Z11\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/149622411591.png\",\"small_image\":\"blockimage/149622411546.png\",\"file_path\":\"\",\"link\":\"http://www.nubia.com/nubiaz11\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0,\"block_products\":{\"spec_id\":776,\"original_price\":2299.00,\"price\":1999.00,\"product_link\":\"nubiaz11/whitegold\",\"sale_point\":{\"sale_point\":\"\",\"block_image_icon\":{\"is_need\":false,\"text\":\"\",\"color\":\"\"}}}},{\"id\":752,\"title\":\"N2\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/149914648730.png\",\"small_image\":\"blockimage/149914648717.png\",\"file_path\":\"\",\"link\":\"http://shop.nubia.com/nubian2\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0,\"block_products\":{\"spec_id\":827,\"original_price\":1799.00,\"price\":1599.00,\"product_link\":\"nubian2/black64g\",\"sale_point\":{\"sale_point\":\"\",\"block_image_icon\":{\"is_need\":false,\"text\":\"\",\"color\":\"\"}}}},{\"id\":774,\"title\":\"M2 畅玩版\",\"sub_title\":\"\",\"page_type\":8,\"big_image\":\"blockimage/150149235598.png\",\"small_image\":\"blockimage/15014923554.png\",\"file_path\":\"\",\"link\":\"http://www.nubia.com/nubiam2_fluency\",\"media_type\":1,\"description\":\"\",\"title_position\":0,\"content_bg_color\":0}]"+ ")");
+</script>
+<script>
+var header_app = new Vue({
+	el: '#header',
+	data: {
+		domain: '',
+        officialDomain:officialDomain,
+        shopDomain:shopDomain,
+		oosdomain: '//oss.static.nubia.cn/',
+		phoneUrl: '/show/page/block?pageType=8&pagePosition=801',
+		loginUrl : '/user/pass/userInfo',
+		username : '',
+		phones: []
+	},
+	mounted: function(){
+        this.getLogin();
+        this.getPhones();
+		//this.getAccesses();
+	},
+	updated: function(){
+		this.productNav("#product");
+		this.productNav("#acc");
+	},
+	methods: {
+		getLogin : function(){
+			var vm = this;
+			$.ajax({
+				type:"get",
+				dataType:'json',
+				url: vm.loginUrl,
+				success: function(res){
+				    if(res.code == 0 && res.data.uid > 0 ){
+                        vm.username = res.data.display_name
+                    }
+				},
+				error: function(e){
+					console.log(e)
+				}
+			});
+		},
+    getPhones: function(){
+        var vm = this;
+        vm.phones = headPhoneInfo;
+
+    },
+		getAccesses: function(){
+			var vm = this;
+			$.ajax({
+				type:"get",
+				dataType:'json',
+				url: vm.domain + vm.accessUrl,
+				success: function(res){
+					var arr = [];
+					$.each(res, function(key, val) {    
+						arr.push(val);                                                          
+					});
+					vm.accesses = arr;
+				},
+				error: function(e){
+					console.log(e)
+				}
+			});
+		},
+		productNav: function(elem){
+            var $elem = $(elem);
+            
+            var $ul = $elem.find('ul'), $li = $elem.find('li'),
+                moving = false, $width = $li.length * ($li.width()+ parseInt($li.css('margin-right'))) - 1,
+                offset = $elem.find(".container").width(),
+                num    = Math.floor($width / offset),
+                offset = offset - parseInt($ul.css('padding-left')),
+                distace = -offset * num;
+                
+            if($li.length <= 1) return false;    
+            var $right = $elem.find(".arrow-right"),
+                $left  = $elem.find(".arrow-left");
+    
+            $right.click(function(e) {
+                e.preventDefault();
+                if(moving) return;
+                moving = true;
+                var temp = parseInt($ul.css("left"));
+    
+                if(temp > distace) {
+                    $ul.animate({ left: temp - offset }, "slow", stop_moving);
+                } else {
+                    $ul.animate({ left: temp - 10 }, "fast");
+                    $ul.animate({ left: temp }, "fast", stop_moving);
+                }
+            });
+            $left.click(function(e) {
+                e.preventDefault();
+                if(moving) return;
+                moving = true;
+                var temp = parseInt($ul.css("left"));
+                
+                if(temp < 0) {
+                    $ul.animate({ left: temp + offset }, "slow", stop_moving);
+                } else {
+                    $ul.animate({ left: temp + 10 }, "fast");
+                    $ul.animate({ left: temp }, "fast", stop_moving);
+                }
+            });
+            var stop_moving = function() {
+                moving = false
+            };
+        }
+	}
+})
+
+$(function(){
+    $("ul.list-inline>li").find('.list').css({"display":"block","height":"0"});
+    $("ul.list-inline>li").mouseenter(function() {
+        $(this).find('.list').stop().animate({height:"240px"},300);
+    }).mouseleave(function () {
+        $(this).find('.list').stop().animate({height:"0"},300);
+    });
+    
+    $("#collapse_btn").on('touchstart, click', function(e) {
+	    $(document.documentElement).toggleClass('no-scroll');
+	    $('#navbar-collapse-main li').toggleClass('opacity')
+	});
+});
+</script>
+

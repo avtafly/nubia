@@ -1,0 +1,140 @@
+<h1>这是商城</h1>
+<div my-banner ng-controller="BannerController"></div>
+<!-- /* -----------leftmenu_list ----------*/ -->
+
+<div id="leftmenu" ng-mouseleave="leave($event)" ng-controller="ShopController">
+    <div class="leftmenu_list">
+        <ul ng-mouseover="over($index,$event)" ng-class='{change:$index==index}' ng-repeat="item in leftmenuData">
+            <li>{{item.name}}</li>
+            <!-- <li>红魔电竞游戏手机</li>
+            <li>Z18mini</li>
+            <li>V18</li>
+            <li>Z17/Z17minis</li>
+            <li>Z17/Z17mini</li>
+            <li>M&N系列</li>
+            <li>周边配件</li>
+            <li>专属配件</li> -->
+        </ul>
+    </div>
+    <div class='leftmenu_content'>
+        <a ng-repeat='item in leftmenuData[index].menus_list' ng-href="{{item.link}}">
+            <img ng-src="{{item.image.replace('http:','').replace('//oss','http://oss')}}" alt="">
+            <span>{{item.title}}</span>
+        </a>
+    </div>
+</div>
+<!-- /* --------------.news-------------- */ -->
+
+<div class="news">
+    <ul>
+        <li>
+            <a href="https://shop.nubia.com/recycle.php">
+                <i class="fa fa-superpowers"></i>
+                <span>以旧换新</span>
+            </a>
+            <a href="/nbcode.php">
+                <i class="fa fa-resistance"></i>
+                <span>NB码通道</span>
+            </a>
+            <a href="/warranty.php?a=screenshow">
+                <i class="fa fa-bandcamp"></i>
+                <span>屏碎宝</span>
+            </a>
+            <a href="http://www.nubia.com/active/762460b1da61e90.html">
+                <i class="fa fa-chevron-circle-up"></i>
+                <span>真伪查询</span>
+            </a>
+            <a href="/service.php?sid=3">
+                <i class="fa fa-tablet"></i>
+                <span>售后网点</span>
+            </a>
+            <a href="http://ui.nubia.cn/rom">
+                <i class="fa fa-arrow-circle-o-down"></i>
+                <span>软件下载</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="http://oss.static.nubia.cn/blockimage/152350004328.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="http://oss.static.nubia.cn/blockimage/152343380990.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="http://oss.static.nubia.cn/blockimage/152343385867.jpg">
+            </a>
+        </li>
+
+    </ul>
+
+
+</div>
+<!----------------- content ---------------->
+<div class='pageBlock' ng-controller="ShopController">
+    <div class="best_goodslist">
+        <div class="tabars">
+            <span>精品手机</span>
+            <a>查看更多
+                <i class="fa fa-plus-circle fa-2x"></i>
+            </a>
+        </div>
+
+        <div class=best_goodscontent>
+            <ul id="hotBlock">
+                <li style="margin-bottom:13px" ng-repeat="item in pageBlock[202]">
+                    <a ng-href="{{item.block_products.product_link}}">
+                        <div class="hot-mall ">
+                            <span>{{item.block_products.sale_point.block_image_icon.text}}</span>
+                        </div>
+                        <div class="nbc-pro-cont ">
+                            <div class="figure ">
+                                <img ng-src="{{OSS_DOMAIN+item.big_image}} " width="290 " height="248 ">
+                                <div class="figure-info ">
+                                    <h2>{{item.title}}</h2>
+                                    <span ng-bind-html="item.sub_title | showAsHtml"></span>
+                                </div>
+                            </div>
+                            <div class="price ">
+                                <span>
+                                    <sup>￥</sup>
+                                    <label>{{item.block_products.price}}</label>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="nbc-pro-btn ">
+                        <a class="btn-info " href="http://shop.nubia.com/buy/nubiaz18mini/blue6gb128gb ">查看详情</a>
+                        <a class="btn-sell " href="/buy/nubiaz18mini/blue6gb128gb ">立即购买</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="goods_viedo">
+        <div class="tabars">
+            <span>视频</span>
+            <a>查看更多
+                <i class="fa fa-plus-circle fa-2x"></i>
+            </a>
+        </div>
+        <div class="goods_viedo_box">
+            <ul class="cl" id="viedoBlock">
+                <li class="phone-play" ng-repeat="item in pageBlock[209]" >
+                    <a class="btnplay" href="{{item.file_path}}" data-src="{{item.file_path}}" ng-click="getvideourl($index,$event)" >
+                        <i class="fa fa-play-circle"></i>
+                        <img src="{{OSS_DOMAIN+item.small_image}}" >
+                    </a>
+                    <div class="figure-info">
+                        <h2>{{item.title}}</h2>
+                        <p>{{item.sub_title}}</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--  -->
